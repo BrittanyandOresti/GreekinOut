@@ -16,6 +16,33 @@ h1 {
 }
 
 @media screen and (min-width:641px) and (max-width:2040px) {
+ .logo img {
+  height: 30vh;
+  width: 75vw;
+  padding-left: 10%;
+
+ }
+ .logo {
+  background-color: #cce5f9;
+
+ }
+ ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+ }
+ li {
+
+ }
+ a {
+  text-decoration: none;
+  font-size: 45px;
+  font-weight: bold;
+  color: #1957af;
+ }
+
+
  h1 {
    color: red;
  }
