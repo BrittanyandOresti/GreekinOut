@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "CaviarDreams";
-  src: url("../caviar_dreams/CaviarDreams.ttf");
+  src: url("../Fonts/caviar_dreams/CaviarDreams.ttf");
 }
 
 @media screen and (max-width:640px) {
@@ -137,7 +137,7 @@ a p {
 
 .Charleston_filler {
   padding-top: 5%;
-  font-family: "grec";
+  font-family: 'grec';
   /*padding: 6%;*/
   width: 100vw;
   background-image: url("../Images/charleston.jpg");
