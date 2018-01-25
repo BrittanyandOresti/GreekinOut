@@ -1,40 +1,51 @@
+<!-- contact us form below whould require php or js to send content to gmail -->
+
+<!--
 <!DOCTYPE html>
 <html>
  <head>
   <meta charset="utf-8">
-  <title>Greekin Out</title>
+  <title>Contact Us</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../CSS/main.css">
+  <link rel="stylesheet" href="../CSS/ContactUs.css">
  </head>
 
  <header>
   <div class="logo">
    <img src="../Images/logo.png" alt=""  >
   </div>
-
-
-
- <div class="navBar">
-   <nav>
+   <div class="navBar">
+    <nav>
      <ul>
-
-      <li>
-        <a href="../index.html">
-          <h3>Home</h3>
-          <!-- <p>Our Story</p> -->
-        </a></li>
-        <li>
-          <a href="Calendar.html"><h3>Calendar</h3>
-            <!-- <p>Where to Find Us</p> -->
-          </a>
-        </li>
+      <li> <a href="../index.html"><h3>Home</h3></a></li>
+      <li><a href="Calendar.html"><h3>Calendar</h3></a></li>
       <li><a href="#"><h3>Contact Us</h3></a></li>
       <li><a href="Menu.html"><h3>Menu</h3></a></li>
       <li><a href="Gallery.html"><h3>Gallery</h3></a></li>
      </ul>
-     </nav>
-       </div>
-
-
-
+    </nav>
+   </div>
  </header>
+
+<body>
+
+ <div id="contact">
+  <form action="mailto:greekinoutsc@gmail.com" method="get" enctype="text/plain">
+   <div id="on">
+    <img src="https://cdn4.iconfinder.com/data/icons/flatified/128/plane.png">
+     <div id="off" ><img src="https://i.imgur.com/NMzSq1m.png"></div>
+   </div>
+    <h1> Get in touch!</h1>
+     <input class="name" type="text" placeholder="First Name" required/>
+     <input class="name" type="text" placeholder="Last Name" required/>
+     <input class="email" type="email" placeholder="Email " required/>
+     <input type="tel" name="phone" value="" placeholder="Phone " required>
+      <textarea rows="4" cols="90" name="subject" placeholder="Say Hello..." class="message" required>
+      </textarea>
+     <input class="sub" type="submit" value="Send"/>
+   </form>
+
+</body>
+
+</html> -->
