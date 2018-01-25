@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "grec";
+  src: url("../fonts/Optio_0.ttf");
+}
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("../caviar_dreams/CaviarDreams.ttf");
+}
+
+
+
+@media screen and (max-width:640px) {
+  .logo img {
+   height: 25vh;
+   margin-left: 8%;
+   width: 75vw;
+   padding: 4%;
+   padding-bottom: 1%;
+  }
+
+  .logo {
+   /*background-color: #cce5f9;*/
+   /*background-color: #d4b7f4;*/
+   background-color: #edf4fa;
+   background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+   width: 100vw;
+   height: 100vh;
+  }
+
+  ul {
+   list-style: none;
+   margin-right: 5%;
+   padding-bottom: 3%;
+  }
+
+  li a h3 {
+    padding: 3%;
+  }
+
+  a {
+   text-decoration: none;
+   font-weight: bold;
+   font-family: 'grec';
+   color: #1957af;
+   text-align: center;
+  }
+
+ a h3 {
+   font-family: 'grec';
+   background: #1957af;
+ }
+
+  h3 {
+    color: white;
+    font-size: 1.8em;
+  }
+
+}
+
+@media screen and (min-width:641px) and (max-width:5000px) {
+
+ .logo img {
+  height: 25vh;
+  margin-left: 16.5vw;
+  width: 65vw;
+  padding: 3%;
+  padding-bottom: 1%;
+ }
+
+
+ .logo {
+  /*background-color: #cce5f9;*/
+  /*background-color: #d4b7f4;*/
+  background-color: #edf4fa;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  width: 100vw;
+  height: 40vh;
+  margin-top: 10%;
+
+ }
+
+ .navBar {
+   width: 100vw;
+   position: fixed;
+   background-color: #edf4fa;
+   background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+   /*margin-top: -5%;*/
+   overflow: hidden;
+   top: 0;
+ }
+
+ ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-right: 5%;
+ }
+
+ a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'grec';
+  color: #1957af;
+ }
+
+a h3 {
+  font-size: 30px;
+  font-family: 'grec';
+}
+
+a p {
+  /*margin-top: -20%;*/
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.Charleston_filler {
+  margin-top: -2%;
+  font-family: "grec";
+  /*padding: 6%;*/
+  width: 100vw;
+  background-image: url("../Images/charleston.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  height: 50vh;
+}
+
+.Charleston_filler p {
+  word-spacing: 15%;
+  font-size: 2.5em;
+}
+
+.gyro1Box {
+  margin-top: -2.5%;
+  font-family: "CaviarDreams";
+  background-image: url("../Images/truck.JPG");
+  /*position: fixed;*/
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gyro1Box h1 {
+  padding-top: 3%;
+  padding-left: 1%;
+  font-size: 3em;
+  font-family: 'grec';
+}
+
+.blurBox {
+  background: rgba(34,34,34,0.75);
+  width: 44%;
+  padding: 2%;
+  color: white;
+  line-height: 2em;
+  margin-left: 2%;
+  height: 74%;
+}
+
+/*  originally had a flexed box with image to the right and changed to image as background to flow..*/
+/*.gyro1Box {
+  display: flex;
+  width: 80vw;
+  padding: 5%;
+}
+.gyro1Box h2 {
+  width: 30vw;
+}
+.gyro1Box img {
+  width: 40vw;
+  height: 40vh;
+}*/
+}
