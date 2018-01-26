@@ -91,7 +91,7 @@ h1 {
 }
 
 .photo_1 h1 {
-  height: 80vh;
+  height: 70vh;
   /*width: 90vw;*/
   background-image: url("../Images/charleston.jpg");
   margin-top: 10vw;
@@ -109,7 +109,7 @@ h1 {
 }
 
 .photo_2 h1 {
-  /*height: 70vh;*/
+  height: 55vh;
   /*width: 90vw;*/
   background-image: url("../Images/truck.JPG");
   margin-top: 10vw;
@@ -127,7 +127,7 @@ h1 {
 }
 
 .photo_3 h1 {
-  /*height: 70vh;*/
+  height: 55vh;
   /*width: 90vw;*/
   background-image: url("../Images/salad.jpg");
   margin-top: 10vw;
@@ -145,7 +145,7 @@ h1 {
 }
 
 .photo_4 h1 {
-  /*height: 70vh;*/
+  height: 55vh;
   /*width: 90vw;*/
   background-image: url("../Images/greek_pita.jpg");
   margin-top: 10vw;
@@ -154,7 +154,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   font-family: 'grec';
-  color: white;
+  color: black;
   font-size: 3em;
   text-shadow: black 5px 5px 5px;
   padding: 5%;
