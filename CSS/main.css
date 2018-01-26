@@ -19,7 +19,6 @@ height: 100vh;
 .navBar nav{
   z-index: 1000;
   font-family: "grec";
-
   background-color: #efd4a7;
   /*background-color: #8d9fbc;*/
   background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
@@ -38,7 +37,8 @@ height: 100vh;
 .navBar nav ul {
   display: flex;
   justify-content: space-between;
-  width: 50vw;
+  width: 80vw;
+  padding-top: 3vh;
   list-style: none;
   vertical-align: center;
 }
@@ -46,10 +46,11 @@ height: 100vh;
 nav a {
   vertical-align: center;
   text-decoration: none;
+  font-size: 1.4em;
 }
 
 .navBar img {
-    width: 30vw;
+  width: 30vw;
 }
 
 h1 {
@@ -63,7 +64,7 @@ h1 {
   /*padding: 6%;*/
   width: 101vw;
   margin-left: -1%;
-  background-image: url("../Images/charleston.jpg");
+  background-image: url("../Images/santorini.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -75,9 +76,12 @@ h1 {
 
 .Charleston_filler p {
   word-spacing: .2em;
+  line-height: 1.2em;
   font-size: 4em;
   padding-top: 7%;
-  padding-left: 3%;
+  padding-left: 70%;
+  text-align: center;
+  text-shadow: 1px 1px 1px black
 }
 
 .carousel {
