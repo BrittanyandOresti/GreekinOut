@@ -1,5 +1,100 @@
 
 @font-face {
  font-family: "grec";
- src: url("../fonts/Optio_0.ttf");
+ src: url("../Fonts/Optio_0.ttf");
+}
+
+body {
+
+}
+#Donkey{
+ z-index: -1;
+ height: 100vh;
+ width: 100vw;
+ position: absolute;
+ margin-top: -20vh;
+}
+
+nav{
+  z-index: 1000;
+  font-family: "grec";
+  background-color: #efd4a7;
+  /*background-color: #8d9fbc;*/
+  background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  padding: 2%;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  width: 110vw;
+  height: 12%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  padding-top: 3vh;
+  list-style: none;
+  vertical-align: center;
+}
+
+nav ul li a {
+  vertical-align: center;
+  text-decoration: none;
+  font-size: 1.4em;
+}
+
+#logo {
+  width: 27vw;
+  /*z-index: 1;*/
+}
+
+form {
+ z-index: 2;
+ margin-top: 30vh;
+}
+
+input {
+ z-index: 3;
+ /*height: 5vh;*/
+ padding: 15px 20px 15px 0;
+ text-indent: 20px;
+ word-wrap: break-word;
+ /*width: 30vw;*/
+ margin: 15px;
+ background-color: #efd4a7;
+ color: black;
+ font-weight: bold;
+ font-size: 1em;
+ /*padding: 3px;*/
+ /*line-height: 2em;*/
+ /*margin-top: 10px;*/
+}
+
+#commentbox {
+ width: 35vw;
+ height: 20vh;
+ margin-left: 52vw;
+ /*line-height: 25vh;*/
+ /*position: absolute;*/
+}
+
+select {
+ width: 15vw;
+ height: 7vh;
+ margin-left: 15px;
+ background-color: #efd4a7;
+ color: black;
+ /*font-weight: bold;*/
+ font-size: 1em;
+
+}
+
+.info1, .info2 {
+ display: flex;
+ width: 90vw;
 }
