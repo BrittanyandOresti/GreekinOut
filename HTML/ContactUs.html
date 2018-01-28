@@ -21,42 +21,46 @@
 
 
  <body>
-  <img src="../Images/Donkeys2.jpeg" alt=""id="Donkey">
+  <img src="../Images/Donkey3.jpg" alt=""id="Donkey">
   <form class="" action="index.html" method="post">
-<div class="info1">
 
-   <input type="text" name="Fname" value="" placeholder="First Name" required>
-   <input type="text" name="Lname" value="" placeholder="Last Name" required>
+   <div class="info1">
+    <input type="text" name="Fname" value="" placeholder="First Name" required>
+    <input type="text" name="Lname" value="" placeholder="Last Name" required>
+   </div>
 
-   <input type="phone" name="phone" value="" placeholder="phone number" required>
-  </div>
+   <div class="info2">
+    <input type="phone" name="phone" value="" placeholder="phone number" required>
+    <input type="email" name="email" value="" placeholder="email" required>
+   </div>
 
-<div class="info2">
+   <div class="info3">
    <input type="text" name="Date" value="" placeholder="Event Date" required>
    <input type="text" name="Guests" value="" placeholder="Number of Guests" required>
-      <input type="email" name="email" value="" placeholder="email" required>
-</div>
+  </div>
 
-<div class="dropdown">
+   <div class="dropdown">
+    <select name="event">
+     <option value="select event"> Event Type</option>
+     <option value="Private Party">Private Party</option>
+     <option value="Wedding/Rehersel Dinner">Wedding/Rehearsal Dinner</option>
+     <option value="Birthday">Birthday</option>
+     <option value="Corparate Event">Corporate Event</option>
+     <option value="Graduation">Graduation</option>
+     <option value="Festival">Festival</option>
+     <option value="other">Other</option>
+    </select>
+   </div>
 
- <select name="event">
-  <option value="select event"> Event Type</option>
-  <option value="Private Party">Private Party</option>
-  <option value="Wedding/Rehersel Dinner">Wedding/Rehearsal Dinner</option>
-  <option value="Birthday">Birthday</option>
-  <option value="Corparate Event">Corporate Event</option>
-  <option value="Graduation">Graduation</option>
-  <option value="Festival">Festival</option>
-  <option value="other">Other</option>
- </select>
-</div>
+   <div class="info4">
+    <input id="commentbox" type="text" name="comments" value="" placeholder="Additional Comments" required>
+   </div>
 
-<div class="info3">
-   <input id="commentbox" type="text" name="comments" value="" placeholder="Additional Comments" required>
-   <button type="submit" form="" value="Submit">Submit</button>
- </div>
+
   </form>
+  <button type="submit" form="" id="sub" value="Submit">Submit</button>
 
-   <!-- <img src="../Images/Donkeys.jpg" id="Donkeys" alt=""><h2>our donkeys will deliver the mail</h2> -->
+
+
  </body>
 </html>

@@ -4,40 +4,23 @@
  src: url("../Fonts/Optio_0.ttf");
 }
 
-body {
-
-}
-#Donkey{
- z-index: -1;
- height: 100vh;
- width: 100vw;
- position: absolute;
- margin-top: -20vh;
-}
-
 nav{
   z-index: 1000;
   font-family: "grec";
-  background-color: #efd4a7;
-  /*background-color: #8d9fbc;*/
-  background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-color: #dbd6d6;
   padding: 2%;
-  position: fixed;
-  overflow: hidden;
   top: 0;
   left: 0;
   display: flex;
   flex-direction: row;
   width: 110vw;
-  height: 12%;
+  height: 7vh;
 }
 
 nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
   width: 80vw;
-  padding-top: 3vh;
   list-style: none;
   vertical-align: center;
 }
@@ -49,52 +32,65 @@ nav ul li a {
 }
 
 #logo {
-  width: 27vw;
+  width: 17vw;
   /*z-index: 1;*/
+}
+body{
+ height: 100vh;
+}
+
+#Donkey{
+ z-index: -1;
+ height: 100vh;
+ width: 110vw;
+ position: absolute;
 }
 
 form {
- z-index: 2;
- margin-top: 30vh;
+ padding-top: 2vh;
+ float: right;
+
 }
 
-input {
+input{
  z-index: 3;
- /*height: 5vh;*/
- padding: 15px 20px 15px 0;
- text-indent: 20px;
- word-wrap: break-word;
- /*width: 30vw;*/
- margin: 15px;
- background-color: #efd4a7;
+ background-color: #dbd6d6;
  color: black;
  font-weight: bold;
  font-size: 1em;
- /*padding: 3px;*/
- /*line-height: 2em;*/
- /*margin-top: 10px;*/
+ padding: 10px;
+ text-indent: 20px;
+ margin: 15px;
+
 }
 
 #commentbox {
- width: 35vw;
- height: 20vh;
- margin-left: 52vw;
- /*line-height: 25vh;*/
- /*position: absolute;*/
+ width: 30vw;
+ height: 17vh;
+ background-color: #dbd6d6;
+ color: black;
+ font-size: 1em;
+ /*margin-left: 5vw;*/
 }
 
 select {
- width: 15vw;
- height: 7vh;
- margin-left: 15px;
- background-color: #efd4a7;
+ width: 13vw;
+ height: 5vh;
+ background-color: #dbd6d6;
  color: black;
- /*font-weight: bold;*/
  font-size: 1em;
-
+ margin-left: 10vw;
 }
+#sub{
+ border-width: thick;
+ border-color: #dbd6d6;
+ height: 16vh;
+ width: 16vw;
+ background-color: red;
+ color: white;
+ font-size: 2.5em;
+ border-radius: 50%;
+ margin-left: 18vw;
+ margin-top: 30vh;
 
-.info1, .info2 {
- display: flex;
- width: 90vw;
 }
