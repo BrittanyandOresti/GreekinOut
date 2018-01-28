@@ -18,6 +18,8 @@ body {
 }
 
 img {
+ margin-left: 20vw;
+ margin-top: 12vh;
   padding: 5%;
   width: 50vw;
   background-color:rgba(219, 214, 214, 0.8);
@@ -81,7 +83,7 @@ nav a {
   word-spacing: .2em;
   line-height: 1.2em;
   font-size: 4em;
-  margin-right: 15%;
+  /*margin-left: 10vw;*/
   text-align: center;
   text-shadow: 1px 1px 1px black
 }
