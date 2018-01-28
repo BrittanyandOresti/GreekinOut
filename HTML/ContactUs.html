@@ -1,51 +1,66 @@
-<!-- contact us form below whould require php or js to send content to gmail -->
-
-<!--
 <!DOCTYPE html>
 <html>
  <head>
   <meta charset="utf-8">
   <title>Contact Us</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../CSS/main.css">
   <link rel="stylesheet" href="../CSS/ContactUs.css">
  </head>
-
  <header>
-  <div class="logo">
-   <img src="../Images/logo.png" alt=""  >
-  </div>
-   <div class="navBar">
-    <nav>
-     <ul>
-      <li> <a href="../index.html"><h3>Home</h3></a></li>
-      <li><a href="Calendar.html"><h3>Calendar</h3></a></li>
-      <li><a href="#"><h3>Contact Us</h3></a></li>
-      <li><a href="Menu.html"><h3>Menu</h3></a></li>
-      <li><a href="Gallery.html"><h3>Gallery</h3></a></li>
-     </ul>
-    </nav>
-   </div>
+  <nav>
+
+   <img src="../Images/logo.png" alt="" id="logo" >
+    <ul>
+     <li><a href="../index.html" id="home"><h3>Home</h3> </a></li>
+     <li><a href="HTML/Calendar.html"id="calendar"><h3>Calendar</h3></a></li>
+     <li><a href="HTML/ContactUs.html"id="Contact"><h3>Contact Us</h3></a></li>
+     <li><a href="HTML/Menu.html"id="menu"><h3>Menu</h3></a></li>
+     <li><a href="HTML/Gallery.html"id="gallery"><h3>Gallery</h3></a></li>
+    </ul>
+  </nav>
  </header>
 
-<body>
 
- <div id="contact">
-  <form action="mailto:greekinoutsc@gmail.com" method="get" enctype="text/plain">
-   <div id="on">
-    <img src="https://cdn4.iconfinder.com/data/icons/flatified/128/plane.png">
-     <div id="off" ><img src="https://i.imgur.com/NMzSq1m.png"></div>
+ <body>
+  <img src="../Images/Donkey3.jpg" alt=""id="Donkey">
+  <form class="" action="index.html" method="post">
+
+   <div class="info1">
+    <input type="text" name="Fname" value="" placeholder="First Name" required>
+    <input type="text" name="Lname" value="" placeholder="Last Name" required>
    </div>
-    <h1> Get in touch!</h1>
-     <input class="name" type="text" placeholder="First Name" required/>
-     <input class="name" type="text" placeholder="Last Name" required/>
-     <input class="email" type="email" placeholder="Email " required/>
-     <input type="tel" name="phone" value="" placeholder="Phone " required>
-      <textarea rows="4" cols="90" name="subject" placeholder="Say Hello..." class="message" required>
-      </textarea>
-     <input class="sub" type="submit" value="Send"/>
-   </form>
 
-</body>
+   <div class="info2">
+    <input type="phone" name="phone" value="" placeholder="phone number" required>
+    <input type="email" name="email" value="" placeholder="email" required>
+   </div>
 
-</html> -->
+   <div class="info3">
+   <input type="text" name="Date" value="" placeholder="Event Date" required>
+   <input type="text" name="Guests" value="" placeholder="Number of Guests" required>
+  </div>
+
+   <div class="dropdown">
+    <select name="event">
+     <option value="select event"> Event Type</option>
+     <option value="Private Party">Private Party</option>
+     <option value="Wedding/Rehersel Dinner">Wedding/Rehearsal Dinner</option>
+     <option value="Birthday">Birthday</option>
+     <option value="Corparate Event">Corporate Event</option>
+     <option value="Graduation">Graduation</option>
+     <option value="Festival">Festival</option>
+     <option value="other">Other</option>
+    </select>
+   </div>
+
+   <div class="info4">
+    <input id="commentbox" type="text" name="comments" value="" placeholder="Additional Comments" required>
+   </div>
+
+
+  </form>
+  <button type="submit" form="" id="sub" value="Submit">Submit</button>
+
+
+
+ </body>
+</html>
