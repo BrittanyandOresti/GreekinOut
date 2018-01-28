@@ -9,216 +9,79 @@
 }
 
 body {
-background-color: #60749e;
-/*background-image: url("https://www.transparenttextures.com/patterns/tileable-wood.png");*/
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-width: 100vw;
-height: 100vh;
-}
-
-.navBar nav{
-  z-index: 1000;
-  font-family: "grec";
-  background-color: #efd4a7;
-  /*background-color: #8d9fbc;*/
-  background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  padding: 2%;
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: row;
-  width: 110vw;
-  height: 15%;
-}
-
-.navBar nav ul {
-  display: flex;
-  justify-content: space-between;
-  width: 80vw;
-  padding-top: 3vh;
-  list-style: none;
-  vertical-align: center;
-}
-
-nav a {
-  vertical-align: center;
-  text-decoration: none;
-  font-size: 1.4em;
-}
-
-.navBar img {
-  width: 30vw;
-}
-
-h1 {
-  color: red;
-  margin-top: 25%;
-}
-
-.Charleston_filler {
-  padding-top: 5%;
-  font-family: 'grec';
   width: 100vw;
-  margin-left: -1%;
+  height: 100vh;
   background-image: url("../Images/santorini.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: white;
-  height: 90vh;
-  background-attachment: fixed;
 }
 
-.Charleston_filler p {
+img {
+  padding: 5%;
+  width: 50vw;
+  background-color:rgba(219, 214, 214, 0.8);
+  border-radius: 10%;
+}
+.navBar {
+    width: 100vw;
+    height: 25vh;
+    margin-top: -1%;
+}
+
+.navBar nav{
+  font-family: "grec";
+  background-color: #Dbd6d6;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+  height: 19vh;
+}
+
+.navBar nav ul {
+  display: flex;
+  /*justify-content: space-between;*/
+  justify-content: space-around;
+  /*width: 80vw;*/
+  /*padding-top: 3vh;*/
+  list-style: none;
+  /*vertical-align: center;*/
+}
+
+button {
+  background-color: #Dbd6d6;
+  font-family: "grec";
+  width: 13vw;
+  font-size: 1em;
+  padding-left: 5%;
+  padding-right: 5%;
+  background: transparent;
+  border-color: #dbd6d6;
+}
+
+.favicons{
+  text-decoration: none;
+  flex-direction: row;
+  display: flex;
+  width: 35vw;
+  margin-left: 30vw;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.4em;
+
+}
+.Charleston p {
+  color: #333334;
+  position: relative;
+  margin-top: -8vh;
+  font-family: "grec";
   word-spacing: .2em;
   line-height: 1.2em;
   font-size: 4em;
-  padding-top: 7%;
-  padding-left: 70%;
+  margin-right: 15%;
   text-align: center;
   text-shadow: 1px 1px 1px black
-}
-
-.carousel {
-   height: 60vh;
-   width: 80vw;
-   margin-left: 10vw;
-   z-index: 1;
-   margin-bottom: 5%;
-}
-
-.photo_1 h1 {
-  height: 70vh;
-  /*width: 90vw;*/
-  background-image: url("../Images/charleston.jpg");
-  margin-top: 10vw;
-  margin-bottom: 5vh;
-  display: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: 'grec';
-  color: white;
-  font-size: 3em;
-  text-shadow: black 2px 2px 2px;
-  padding: 5%;
-  word-spacing: 15px;
-}
-
-.photo_2 h1 {
-  height: 55vh;
-  /*width: 90vw;*/
-  background-image: url("../Images/truck.JPG");
-  margin-top: 10vw;
-  display: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: 'grec';
-  color: white;
-  font-size: 3em;
-  text-shadow: black 5px 5px 5px;
-  padding: 5%;
-  word-spacing: 15px;
-  text-overflow: clip;
-}
-
-.photo_3 h1 {
-  height: 55vh;
-  /*width: 90vw;*/
-  background-image: url("../Images/salad.jpg");
-  margin-top: 10vw;
-  display: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: 'grec';
-  color: white;
-  font-size: 3em;
-  text-shadow: black 5px 5px 5px;
-  padding: 5%;
-  word-spacing: 15px;
-  text-overflow: clip;
-}
-
-.photo_4 h1 {
-  height: 55vh;
-  /*width: 90vw;*/
-  background-image: url("../Images/greek_pita.jpg");
-  margin-top: 10vw;
-  display: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: 'grec';
-  color: black;
-  font-size: 3em;
-  text-shadow: black 5px 5px 5px;
-  padding: 5%;
-  word-spacing: 15px;
-  text-overflow: clip;
-}
-
-.bar_1 {
-  display: flex;
-  width: 90vw;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  text-shadow: black 2px 2px 2px;
-  font-weight: bold;
-  font-size: 1.2em;
-  margin-left: 2vw;
-  font-family: "CaviarDreams";
-}
-.bar_1_words {
-  width: 50vw;
-}
-
-.bar_1 h4 {
-  width: 60vw;
-  height: 70vh;
-  background-image: url(../Images/hummus.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.bar_2 {
-  display: flex;
-  margin-top: 5%;
-  width: 95vw;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  text-shadow: black 2px 2px 2px;
-  font-weight: bold;
-  font-size: 1em;
-  margin-left: 2vw;
-  font-family: "CaviarDreams";
-
-}
-.bar_2_words {
-  width: 50vw;
-  padding-left: 2%;
-  font-size: 1.6em;
-}
-
-.bar_2 h4 {
-  width: 60vw;
-  height: 70vh;
-  background-image: url(../Images/gyro_bar_2.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -5%;
-  background-position: center;
 }
