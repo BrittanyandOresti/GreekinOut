@@ -10,7 +10,7 @@ $(document).ready(function() {
     } else {
       $.ajax({
         method: 'POST',
-        url: '//formspree.io/name@youremail.com',
+        url: '//formspree.io/greekinoutsc@gmail.com',
         data: $('#contact-form').serialize(),
         datatype: 'json'
       });
