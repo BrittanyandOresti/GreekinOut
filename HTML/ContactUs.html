@@ -60,7 +60,37 @@
         </header>
  <body>
   <img src="../Images/donkey3.jpg" alt=""id="Donkey">
-  <form id="contact-form" method="POST" action="https://formspree.io/greekinoutsc@gmail.com">
+
+
+
+  <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <form id="contact-form">
+        <div class="form-group center-block">
+          <label for="inputName">Name</label>
+          <input type="text" class="form-control contact-input" id="inputName" placeholder="Name" name="name">
+        </div>
+        <div class="form-group center-block">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control contact-input" id="inputEmail" placeholder="Email" name="email">
+        </div>
+        <div class="form-group center-block">
+          <label for="inputMessage">Message</label>
+          <textarea id="inputMessage" class="form-control contact-input" rows="3" placeholder="Your Message" name="message"></textarea>
+        </div>
+        <input type="text" name="_gotcha" class="display-none">
+        <div class="text-center">
+          <button class="btn btn-default" type="submit" id="email-submit-btn" value="Send">
+            Submit
+          </button>
+        </div>
+        <span></span>
+      </form>
+    </div>
+  </div>
+</div>
+  <!-- <form id="contact-form" method="POST" action="https://formspree.io/greekinoutsc@gmail.com">
 
    <div class="info1">
     <input type="text" name="Fname" value="" placeholder="First Name" id="FirstName" required>
@@ -92,14 +122,14 @@
 
    <div class="info4">
     <input id="commentbox" type="text" name="comments" value="" placeholder="Additional Comments" required>
-   </div>
+   </div> -->
 
 <<<<<<< HEAD
 =======
    <button type="submit" value="send" id="sub">Send</button>
 >>>>>>> 442bbbfe8c4231d87c0ae0d9ac385464d921816c
   </form>
-  <button type="submit" id="sub">Send</button>
+  <!-- <button type="submit" id="sub">Send</button> -->
   <!-- <button type="submit" form="" id="sub" value="Submit">Submit</button> -->
 
   <script type="text/javascript" src="../JS/contact.js"></script>
