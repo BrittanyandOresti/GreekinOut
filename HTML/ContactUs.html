@@ -5,7 +5,22 @@
   <title>Contact Us</title>
   <link rel="stylesheet" href="../CSS/ContactUs.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<<<<<<< HEAD
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+=======
+  <!-- include the style -->
+<link rel="stylesheet" href="../alertify.min.css" />
+<!-- include a theme -->
+<link rel="stylesheet" href="../themes/default.min.css" />
+<!-- include the script -->
+<script src="../altertifyjs/alertify.min.js"></script>
+<script src="../JS/contact.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
+<!-- Default theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/default.min.css"/>
+<!-- Semantic UI theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/semantic.min.css"/>
+>>>>>>> 442bbbfe8c4231d87c0ae0d9ac385464d921816c
  </head>
 
  <header>
@@ -43,23 +58,9 @@
         </nav>
 
         </header>
- <!-- <header>
-  <nav>
-
-    <ul>
-     <li><a href="../index.html" id="home"><h3>Home</h3> </a></li>
-     <li><a href="HTML/Calendar.html"id="calendar"><h3>Calendar</h3></a></li>
-     <li><a href="HTML/ContactUs.html"id="Contact"><h3>Contact Us</h3></a></li>
-     <li><a href="HTML/Menu.html"id="menu"><h3>Menu</h3></a></li>
-     <li><a href="HTML/Gallery.html"id="gallery"><h3>Gallery</h3></a></li>
-    </ul>
-  </nav>
- </header> -->
-
-
  <body>
   <img src="../Images/donkey3.jpg" alt=""id="Donkey">
-  <form method="POST" action="https://formspree.io/greekinoutsc@gmail.com">
+  <form id="contact-form" method="POST" action="https://formspree.io/greekinoutsc@gmail.com">
 
    <div class="info1">
     <input type="text" name="Fname" value="" placeholder="First Name" id="FirstName" required>
@@ -70,7 +71,7 @@
     <input type="phone" name="phone" value="" placeholder="phone number" id="phone"required>
     <input type="email" name="email" value="" placeholder="email" id="email"required>
    </div>
-
+<input type="text" name="_gotcha" style="display:none" />
    <div class="info3">
    <input type="date" name="Date" value="" placeholder="Event Date" id="date"required></input>
    <input type="number" name="Guests" value="" placeholder="Number of Guests" id="guests"required>
@@ -93,12 +94,16 @@
     <input id="commentbox" type="text" name="comments" value="" placeholder="Additional Comments" required>
    </div>
 
+<<<<<<< HEAD
+=======
+   <button type="submit" value="send" id="sub">Send</button>
+>>>>>>> 442bbbfe8c4231d87c0ae0d9ac385464d921816c
   </form>
   <button type="submit" id="sub">Send</button>
   <!-- <button type="submit" form="" id="sub" value="Submit">Submit</button> -->
 
-  <script type="text/javascript" src="../JS/contact.js">
-
-  </script>
+  <script type="text/javascript" src="../JS/contact.js"></script>
+  <script src="../alertifyjs/alertify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
  </body>
  </html>
