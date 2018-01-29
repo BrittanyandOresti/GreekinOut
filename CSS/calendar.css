@@ -60,6 +60,23 @@ nav a {
   font-size: 1.4em;
 
 }
+iframe{
+ z-index: 1000;
+ height: 70vh;
+ width: 70vw;
+ margin-left: 13vw;
+ margin-top: 3vh;
+}
+#map{
+ position: relative;
+ top: 0;
+ z-index: 1;
+}
 body{
- height: 100vh;
+margin: 0%;
+ background-image: url("../Images/CharlestonMap2.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+width: 100vw;
+height: 100vh;
 }
