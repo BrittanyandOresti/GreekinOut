@@ -5,6 +5,7 @@
   <title>Contact Us</title>
   <link rel="stylesheet" href="../CSS/ContactUs.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
  </head>
 
  <header>
@@ -71,8 +72,8 @@
    </div>
 
    <div class="info3">
-   <input type="text" name="Date" value="" placeholder="Event Date" id="date"required>
-   <input type="text" name="Guests" value="" placeholder="Number of Guests" id="guests"required>
+   <input type="date" name="Date" value="" placeholder="Event Date" id="date"required></input>
+   <input type="number" name="Guests" value="" placeholder="Number of Guests" id="guests"required>
   </div>
 
    <div class="dropdown">
@@ -92,8 +93,8 @@
     <input id="commentbox" type="text" name="comments" value="" placeholder="Additional Comments" required>
    </div>
 
-   <button type="submit" id="sub">Send</button>
   </form>
+  <button type="submit" id="sub">Send</button>
   <!-- <button type="submit" form="" id="sub" value="Submit">Submit</button> -->
 
   <script type="text/javascript" src="../JS/contact.js">

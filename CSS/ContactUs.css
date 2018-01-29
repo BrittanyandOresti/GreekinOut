@@ -117,8 +117,17 @@ input{
  margin: 15px;
 
 }
+#date{
+ font-weight: normal;
+height: 2vh;
+width: 13vw;
+color: black;
+font-size: 1.5em;
+background-color: #dbd6d6;
 
-#commentbox {
+}
+
+#commentbox{
  width: 30vw;
  height: 17vh;
  background-color: #dbd6d6;
