@@ -5,36 +5,8 @@
   <title>Contact Us</title>
   <link rel="stylesheet" href="../CSS/ContactUs.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- <<<<<<< HEAD -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!-- ======= -->
-  <!-- include the style -->
-<link rel="stylesheet" href="../alertify.min.css" />
-<!-- include a theme -->
-<link rel="stylesheet" href="../alertifyjs/css/themes/default.min.css" />
-<!-- include the script -->
-<script src="../altertifyjs/alertify.min.js"></script>
-<script src="../JS/contact.js"></script>
-<!-- CSS -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
-<!-- Default theme -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/default.min.css"/>
-<!-- Semantic UI theme -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/semantic.min.css"/>
-<!-- Bootstrap theme -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/bootstrap.min.css"/>
-
-<!--
-    RTL version
--->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.rtl.min.css"/>
-<!-- Default theme -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/default.rtl.min.css"/>
-<!-- Semantic UI theme -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/semantic.rtl.min.css"/>
-<!-- Bootstrap theme -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/bootstrap.rtl.min.css"/>
-<script src="jquery-3.3.1.min.js"></script>
+  <script src="../altertifyjs/alertify.min.js"></script>
+  <script type="text/javascript"src="../JS/our.js"></script>
  </head>
 
  <header>
@@ -75,35 +47,37 @@
  <body>
   <img src="../Images/donkey3.jpg" alt=""id="Donkey">
 
+  <form id="contact-form"       action="https://formspree.io/greekinoutsc@gmail.com"
+        method="POST">
+      <input id="inputFName" type="text" name="name" placeholder="First Name" required>
 
+      <input id="inputLName" type="text" name="name" placeholder="Last Name" required>
 
-  <div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <form id="contact-form">
-        <div class="form-group center-block">
-          <label for="inputName">Name</label>
-          <input type="text" class="form-control contact-input" id="inputName" placeholder="Name" name="name">
-        </div>
-        <div class="form-group center-block">
-          <label for="inputEmail">Email</label>
-          <input type="email" class="form-control contact-input" id="inputEmail" placeholder="Email" name="email">
-        </div>
-        <div class="form-group center-block">
-          <label for="inputMessage">Message</label>
-          <textarea id="inputMessage" class="form-control contact-input" rows="3" placeholder="Your Message" name="message"></textarea>
-        </div>
-        <input type="text" name="_gotcha" class="display-none">
-        <div class="text-center">
-          <button class="btn btn-default" type="submit" id="email-submit-btn" value="Send">
-            Submit
-          </button>
-        </div>
-        <span></span>
-      </form>
-    </div>
-  </div>
-</div>
+      <input id="phone" type="number" name="phone" value="" placeholder="Contact Number" required>
+
+      <input id="inputEmail" type="text" name="_replyto" placeholder="Email" required>
+
+      <input id="inputMessage" type="textarea" name="" value="" placeholder="Additional Comments or Requests" required>
+
+     <input  id="inputDate" type="date" name="Date" value="" placeholder="Event Date" required></input>
+
+    <input  id="inputGuests" type="number" name="Guests" value="" placeholder="No. of Guests" required>
+
+    <select name="event" id="inputActivity">
+     <option value="select event"> Event Type</option>
+     <option value="Private Party">Private Party</option>
+     <option value="Wedding/Rehersel Dinner">Wedding/Rehearsal Dinner</option>
+     <option value="Birthday">Birthday</option>
+     <option value="Corparate Event">Corporate Event</option>
+     <option value="Graduation">Graduation</option>
+     <option value="Festival">Festival</option>
+     <option value="other">Other</option>
+    </select>
+
+      <input type="submit" value="Send">
+      <input type="hidden" name="_next" value="//brittanyandoresti.github.io/GreekinOut/" />
+  </form>
+
   <!-- <form id="contact-form" method="POST" action="https://formspree.io/greekinoutsc@gmail.com">
 
    <div class="info1">
@@ -138,14 +112,8 @@
     <input id="commentbox" type="text" name="comments" value="" placeholder="Additional Comments" required>
    </div> -->
 
-   <button type="submit" value="send" id="sub">Send</button>
-<!-- >>>>>>> 442bbbfe8c4231d87c0ae0d9ac385464d921816c -->
-  </form>
-  <!-- <button type="submit" id="sub">Send</button> -->
-  <!-- <button type="submit" form="" id="sub" value="Submit">Submit</button> -->
-<script src="jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="../JS/contact.js"></script>
-  <script src="../alertifyjs/alertify.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
+
+  <script type="text/javascript"src="../JS/our.js"></script>
+  <script src="../altertifyjs/alertify.min.js"></script>
  </body>
  </html>
