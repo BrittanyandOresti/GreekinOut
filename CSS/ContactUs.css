@@ -1,22 +1,8 @@
-
 @font-face {
  font-family: "grec";
  src: url("../Fonts/Optio_0.ttf");
 }
-
-/*nav{
-  z-index: 1000;
-  font-family: "grec";
-  background-color: #dbd6d6;
-  padding: 2%;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: row;
-  width: 110vw;
-  height: 7vh;
-}
-
+/********** Nav Bar Styling *************/
 nav ul {
   display: flex;
   justify-content:space-around;
@@ -24,26 +10,22 @@ nav ul {
   list-style: none;
   vertical-align: center;
 }
-
 nav ul li a {
   vertical-align: center;
   text-decoration: none;
   font-size: 1.4em;
-/*}*/
-
+}
 #logo {
   width: 20vw;
   position: fixed;
   position: absolute;
   margin-right: 80vw;
 }
-
 .navBar {
     width: 100vw;
     height: 20vh;
     margin-top: -1%;
 }
-
 .navBar nav{
   font-family: "grec";
   background-color: #Dbd6d6;
@@ -52,18 +34,12 @@ nav ul li a {
   padding-top: 2%;
   height: 19vh;
 }
-
 .navBar nav ul {
   display: flex;
   padding-left: 20vw;
-  /*justify-content: space-between;*/
   justify-content: space-around;
-  /*width: 80vw;*/
-  /*padding-top: 3vh;*/
   list-style: none;
-  /*vertical-align: center;*/
 }
-
 ul button {
   background-color: #Dbd6d6;
   font-family: "grec";
@@ -74,7 +50,6 @@ ul button {
   background: transparent;
   border-color: #dbd6d6;
 }
-
 .favicons{
   display: flex;
   text-decoration: none;
@@ -83,29 +58,29 @@ ul button {
   margin-left: 30vw;
   justify-content: space-around;
 }
-
 nav a {
   text-decoration: none;
   font-size: 1.4em;
-
 }
+
+
+/************* Form portion of page***************/
+
 body{
  height: 100vh;
 }
-
 #Donkey{
  z-index: -1;
  height: 100vh;
  width: 110vw;
  position: absolute;
 }
-
 form {
  padding-top: 2vh;
  float: right;
-
+ width: 45vw;
+ margin-right: 1vw;
 }
-
 input{
  z-index: 3;
  background-color: #dbd6d6;
@@ -113,47 +88,23 @@ input{
  font-weight: bold;
  font-size: 1em;
  padding: 10px;
- text-indent: 20px;
+ text-indent: 5px;
  margin: 15px;
-
 }
-#date{
- font-weight: normal;
-height: 2vh;
-width: 13vw;
-color: black;
-font-size: 1.5em;
-background-color: #dbd6d6;
-
+#send {
+  font-family: "grec";
+  font-size: 2em;
+  text-align: center;
+  margin-left: -65vw;
+  margin-top: -14vh;
+  width: 15vw;
+  background-color: red;
+  height: 15vh;
+  border-radius: 50%;
+  border-color: yellow;
+  color: black;
 }
-
-#commentbox{
- width: 30vw;
- height: 17vh;
- background-color: #dbd6d6;
- color: black;
- font-size: 1em;
- /*margin-left: 5vw;*/
-}
-
-select {
- width: 13vw;
- height: 5vh;
- background-color: #dbd6d6;
- color: black;
- font-size: 1em;
- margin-left: 10vw;
-}
-#sub{
- border-width: thick;
- border-color: #dbd6d6;
- height: 16vh;
- width: 16vw;
- background-color: red;
- color: white;
- font-size: 2.5em;
- border-radius: 50%;
- margin-left: 18vw;
- margin-top: 30vh;
-
+#inputActivity {
+  height: 6vh;
+  font-size: .9em;
 }
