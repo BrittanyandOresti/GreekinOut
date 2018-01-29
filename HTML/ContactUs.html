@@ -57,26 +57,26 @@
 
 
  <body>
-  <img src="../Images/Donkey3.jpg" alt=""id="Donkey">
+  <img src="../Images/donkey3.jpg" alt=""id="Donkey">
   <form method="POST" action="https://formspree.io/greekinoutsc@gmail.com">
 
    <div class="info1">
-    <input type="text" name="Fname" value="" placeholder="First Name" required>
-    <input type="text" name="Lname" value="" placeholder="Last Name" required>
+    <input type="text" name="Fname" value="" placeholder="First Name" id="FirstName" required>
+    <input type="text" name="Lname" value="" placeholder="Last Name" id="LastName"required>
    </div>
 
    <div class="info2">
-    <input type="phone" name="phone" value="" placeholder="phone number" required>
-    <input type="email" name="email" value="" placeholder="email" required>
+    <input type="phone" name="phone" value="" placeholder="phone number" id="phone"required>
+    <input type="email" name="email" value="" placeholder="email" id="email"required>
    </div>
 
    <div class="info3">
-   <input type="text" name="Date" value="" placeholder="Event Date" required>
-   <input type="text" name="Guests" value="" placeholder="Number of Guests" required>
+   <input type="text" name="Date" value="" placeholder="Event Date" id="date"required>
+   <input type="text" name="Guests" value="" placeholder="Number of Guests" id="guests"required>
   </div>
 
    <div class="dropdown">
-    <select name="event">
+    <select name="event" id="event">
      <option value="select event"> Event Type</option>
      <option value="Private Party">Private Party</option>
      <option value="Wedding/Rehersel Dinner">Wedding/Rehearsal Dinner</option>
@@ -92,11 +92,12 @@
     <input id="commentbox" type="text" name="comments" value="" placeholder="Additional Comments" required>
    </div>
 
-   <button type="submit">Send</button>
+   <button type="submit" id="sub">Send</button>
   </form>
   <!-- <button type="submit" form="" id="sub" value="Submit">Submit</button> -->
 
+  <script type="text/javascript" src="../JS/contact.js">
 
-
+  </script>
  </body>
-</html>
+ </html>
