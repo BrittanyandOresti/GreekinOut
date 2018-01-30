@@ -8,72 +8,73 @@
   src: url("../Fonts/caviar_dreams/CaviarDreams_Bold.ttf");
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../Images/santorini.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+#logo {
+ width: 20vw;
+ position: fixed;
+ position: absolute;
+ margin-right: 80vw;
 }
 
-img {
- margin-left: 20vw;
- margin-top: 12vh;
-  padding: 5%;
-  width: 50vw;
-  background-color:rgba(219, 214, 214, 0.8);
-  border-radius: 10%;
-}
 .navBar {
-    width: 100vw;
-    height: 25vh;
-    margin-top: -1%;
+ width: 100vw;
+ height: 25vh;
+ margin-top: -1%;
 }
 
 .navBar nav{
-  font-family: "grec";
-  background-color: #Dbd6d6;
-  display: flex;
-  flex-direction: column;
-  padding-top: 2%;
-  height: 19vh;
+ font-family: "grec";
+ background-color: #Dbd6d6;
+ display: flex;
+ flex-direction: column;
+ padding-top: 2%;
+ height: 19vh;
 }
 
 .navBar nav ul {
-  display: flex;
-  /*justify-content: space-between;*/
-  justify-content: space-around;
-  /*width: 80vw;*/
-  /*padding-top: 3vh;*/
-  list-style: none;
-  /*vertical-align: center;*/
+ display: flex;
+ padding-left: 20vw;
+ justify-content: space-around;
+ list-style: none;
 }
 
-button {
-  background-color: #Dbd6d6;
-  font-family: "grec";
-  height: 5vw;
-  font-size: 1em;
-  background: transparent;
-  border-color: #dbd6d6;
+ul button {
+ background-color: #Dbd6d6;
+ font-family: "grec";
+ width: 13vw;
+ font-size: 1em;
+ padding-left: 5%;
+ padding-right: 5%;
+ background: transparent;
+ border-color: #dbd6d6;
+ border: none;
 }
 
 .favicons{
-  text-decoration: none;
-  flex-direction: row;
-  display: flex;
-  width: 35vw;
-  margin-left: 30vw;
-  justify-content: space-around;
+ display: flex;
+ text-decoration: none;
+ flex-direction: row;
+ width: 35vw;
+ margin-left: 30vw;
+ justify-content: space-around;
 }
 
 nav a {
-  text-decoration: none;
-  font-size: 1.4em;
-
+ text-decoration: none;
+ font-size: 1.4em;
 }
-.Charleston p {
+
+body{
+ background-image: url("../Images/santorini.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ padding: 0;
+ margin: 0;
+}
+
+
+
+/*word "Charleston in logo box below"*/
+/*.Charleston p {*/
   color: #333334;
   position: relative;
   margin-top: -8vh;
@@ -85,3 +86,23 @@ nav a {
   text-align: center;
   text-shadow: 1px 1px 1px black
 }
+
+
+/*logo in the middle below*/
+/*body {
+width: 100vw;
+height: 100vh;
+background-image: url("../Images/santorini.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+img {
+margin-left: 20vw;
+margin-top: 12vh;
+padding: 5%;
+width: 50vw;
+background-color:rgba(219, 214, 214, 0.8);
+border-radius: 10%;
+}*/
