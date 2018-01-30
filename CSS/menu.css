@@ -65,6 +65,7 @@ body{
   background-color: #1557b2;
 }
 .Menu {
+  font-family: "grec";
   background-color: rgba(219, 214, 214, 0.8);
   width: 70vw;
   float: center;
@@ -138,7 +139,7 @@ body{
 #span4 {
   margin-top: -3%;
   word-spacing: 15px;
-  line-height: 1.3em;
+  line-height: 1.4em;
   letter-spacing: 2px;
   display: flex;
   width: 50vw;
@@ -152,4 +153,86 @@ body{
 #span4 h4{
   width: 30vw;
   padding-left: 15%;
+}
+
+/******* Meat Section Number 2****/
+
+.meat {
+  width: 80vw;
+  padding-left: 10%;
+}
+.meat h1 {
+  word-spacing: 10px;
+  letter-spacing: 1px;
+}
+#span5 {
+  letter-spacing: 1px;
+  width: 55vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sauce {
+  padding-top: 5%;
+  width: 80vw;
+  padding-left: 10%;
+}
+.sauce h1 {
+  word-spacing: 10px;
+  letter-spacing: 1px;
+}
+#span6 {
+  word-spacing: 10px;
+  letter-spacing: 1px;
+  width: 55vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#span6 h2 {
+  width: 10vw;
+  line-height: 1.5em;
+}
+.side {
+  padding-top: 5%;
+  width: 80vw;
+  padding-left: 10%;
+}
+.side h1 {
+  word-spacing: 10px;
+  letter-spacing: 1px;
+}
+#span7 {
+  word-spacing: 10px;
+  letter-spacing: 1px;
+  width: 55vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.salads {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ padding-left: 13vw;
+ width: 50vw;
+ word-spacing: 7px;
+}
+.salads img {
+  padding: 2%:
+  width: 15vw;
+  height: 8vw;
+  position: absolute;
+   clip: rect(0px,120px,200px,0px);
+}
+.salads h1 {
+  letter-spacing: 2px;
+  font-size: 4em;
+  margin-left: 10vw;
+  margin-top: 15vh;
+  padding-right: 5vw;
+  width: 50vw;
 }
