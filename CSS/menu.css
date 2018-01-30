@@ -1,75 +1,92 @@
+
 @font-face {
-  font-family: "grec";
-  src: url("../fonts/Optio_0.ttf");
+ font-family: "grec";
+ src: url("../Fonts/Optio_0.ttf");
 }
+
+@font-face {
+ font-family: "CaviarDreams";
+ src: url("../Fonts/caviar_dreams/CaviarDreams_Bold.ttf");
+}
+/********** Nav Bar Styling *************/
+
 #logo {
-  width: 20vw;
-  position: fixed;
-  position: absolute;
-  margin-right: 80vw;
+ width: 20vw;
+ position: fixed;
+ position: absolute;
+ margin-right: 80vw;
 }
+
 .navBar {
-    width: 100vw;
-    height: 25vh;
-    margin-top: -1%;
+ width: 100vw;
+ height: 25vh;
+ margin-top: -1%;
 }
+
 .navBar nav{
-  font-family: "grec";
-  background-color: #Dbd6d6;
-  display: flex;
-  flex-direction: column;
-  padding-top: 2%;
-  height: 19vh;
+ font-family: "grec";
+ background-color: #Dbd6d6;
+ display: flex;
+ flex-direction: column;
+ padding-top: 2%;
+ height: 19vh;
 }
 
 .navBar nav ul {
-  display: flex;
-  padding-left: 20vw;
-  /*justify-content: space-between;*/
-  justify-content: space-around;
-  /*width: 80vw;*/
-  /*padding-top: 3vh;*/
-  list-style: none;
-  /*vertical-align: center;*/
+ display: flex;
+ padding-left: 20vw;
+ justify-content: space-around;
+ list-style: none;
 }
 
 ul button {
-  background-color: #Dbd6d6;
-  font-family: "grec";
-  width: 13vw;
-  font-size: 1em;
-  padding-left: 5%;
-  padding-right: 5%;
-  background: transparent;
-  border-color: #dbd6d6;
+ background-color: #Dbd6d6;
+ font-family: "grec";
+ width: 13vw;
+ font-size: 1em;
+ padding-left: 5%;
+ padding-right: 5%;
+ background: transparent;
+ border-color: #dbd6d6;
+ border: none;
 }
 
 .favicons{
-  display: flex;
-  text-decoration: none;
-  flex-direction: row;
-  width: 35vw;
-  margin-left: 30vw;
-  justify-content: space-around;
+ display: flex;
+ text-decoration: none;
+ flex-direction: row;
+ width: 35vw;
+ margin-left: 30vw;
+ justify-content: space-around;
 }
 
 nav a {
-  text-decoration: none;
-  font-size: 1.4em;
-
+ text-decoration: none;
+ font-size: 1.4em;
 }
+
 /******** menu portion of page****/
+
 body{
   background-color: #1557b2;
+  padding: 0;
+  margin: 0%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .Menu {
-float: center;
-padding-left: 10%;
+display: flex;
+justify-content: space-around;
+padding-left: 5vw;
+padding-right: 5vw;
+
 }
-#menu2{
-  padding-bottom: .9%;
-}
+
+
+
+/*different menu disigh*/
+/*
 .top {
  display: flex;
  justify-content: center;
@@ -156,7 +173,7 @@ padding-left: 10%;
 }
 
 /******* Meat Section Number 2****/
-
+/*
 .meat {
   width: 80vw;
   padding-left: 10%;
