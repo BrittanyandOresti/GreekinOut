@@ -8,13 +8,11 @@
   position: absolute;
   margin-right: 80vw;
 }
-
 .navBar {
     width: 100vw;
     height: 25vh;
     margin-top: -1%;
 }
-
 .navBar nav{
   font-family: "grec";
   background-color: #Dbd6d6;
@@ -64,12 +62,13 @@ nav a {
 body{
   background-color: #1557b2;
 }
+
 .Menu {
-  font-family: "grec";
-  background-color: rgba(219, 214, 214, 0.8);
-  width: 70vw;
-  float: center;
-  margin-left: 15%;
+float: center;
+padding-left: 10%;
+}
+#menu2{
+  padding-bottom: .9%;
 }
 .top {
  display: flex;
@@ -90,7 +89,7 @@ body{
   width: 50vw;
 }
 .top img {
-  padding: 2%:
+  padding: 2%;
   width: 15vw;
   height: 8vw;
   position: absolute;
@@ -98,23 +97,23 @@ body{
 }
 #span1 h1 {
   letter-spacing: 2px;
-  font-size: 4em;
+  font-size: 2.5em;
   margin-left: 10vw;
-  margin-top: 30vh;
+  margin-top: 10vh;
   padding-right: 5vw;
 }
 #span1 h2 {
   letter-spacing: 2px;
-  margin-top: 25vh;
   font-size: 2em;
   line-height: 2em;
   width: 25vw;
 }
 #span2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   word-spacing: 3px;
   line-height: 1.7em;
   text-align: center;
+  margin-top: -5vh;
 }
 .choose {
   font-family: "grec";
@@ -134,7 +133,7 @@ body{
   letter-spacing: 2px;
 }
 #span3 h3, #span3 h2{
-  font-size: 2em;
+  font-size: 1.8em;
 }
 #span4 {
   margin-top: -3%;
@@ -144,7 +143,7 @@ body{
   display: flex;
   width: 50vw;
   padding-left: 15%;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 #span4 h3{
   width: 30vw;
@@ -153,6 +152,7 @@ body{
 #span4 h4{
   width: 30vw;
   padding-left: 15%;
+  font-size:1.2em;
 }
 
 /******* Meat Section Number 2****/
@@ -164,6 +164,7 @@ body{
 .meat h1 {
   word-spacing: 10px;
   letter-spacing: 1px;
+  font-size: 1.8em;
 }
 #span5 {
   letter-spacing: 1px;
@@ -172,6 +173,7 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  font-size: .9em;
 }
 .sauce {
   padding-top: 5%;
@@ -181,6 +183,7 @@ body{
 .sauce h1 {
   word-spacing: 10px;
   letter-spacing: 1px;
+  font-size: 1.8em;
 }
 #span6 {
   word-spacing: 10px;
@@ -203,6 +206,7 @@ body{
 .side h1 {
   word-spacing: 10px;
   letter-spacing: 1px;
+  font-size: 1.8em;
 }
 #span7 {
   word-spacing: 10px;
