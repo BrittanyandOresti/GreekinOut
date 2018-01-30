@@ -60,7 +60,96 @@ nav a {
   font-size: 1.4em;
 
 }
+/******** menu portion of page****/
+body{
+  background-color: #1557b2;
+}
+.Menu {
+  background-color: rgba(219, 214, 214, 0.8);
+  width: 70vw;
+  float: center;
+  margin-left: 15%;
+}
 .top {
  display: flex;
  justify-content: center;
-flex-direction: row;}
+ flex-direction: column;
+ padding-left: 13vw;
+ width: 50vw;
+ font-family: "grec";
+ word-spacing: 7px;
+}
+
+.top #span1 {
+  float: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: space-around;
+  width: 50vw;
+}
+.top img {
+  padding: 2%:
+  width: 15vw;
+  height: 8vw;
+  position: absolute;
+   clip: rect(0px,120px,200px,0px);
+}
+#span1 h1 {
+  letter-spacing: 2px;
+  font-size: 4em;
+  margin-left: 10vw;
+  margin-top: 30vh;
+  padding-right: 5vw;
+}
+#span1 h2 {
+  letter-spacing: 2px;
+  margin-top: 25vh;
+  font-size: 2em;
+  line-height: 2em;
+  width: 25vw;
+}
+#span2 {
+  font-size: 1.5em;
+  word-spacing: 3px;
+  line-height: 1.7em;
+  text-align: center;
+}
+.choose {
+  font-family: "grec";
+  text-align: center;
+}
+.choice1box {
+  display: flex;
+  flex-direction: column;
+}
+#span3 {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  width: 50vw;
+  padding-left: 15%;
+  word-spacing: 15px;
+  letter-spacing: 2px;
+}
+#span3 h3, #span3 h2{
+  font-size: 2em;
+}
+#span4 {
+  margin-top: -3%;
+  word-spacing: 15px;
+  line-height: 1.3em;
+  letter-spacing: 2px;
+  display: flex;
+  width: 50vw;
+  padding-left: 15%;
+  font-size: 1.2em;
+}
+#span4 h3{
+  width: 30vw;
+  padding-left: 34%;
+}
+#span4 h4{
+  width: 30vw;
+  padding-left: 15%;
+}
