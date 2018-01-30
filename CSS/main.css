@@ -53,10 +53,8 @@ img {
 button {
   background-color: #Dbd6d6;
   font-family: "grec";
-  width: 13vw;
+  height: 5vw;
   font-size: 1em;
-  padding-left: 5%;
-  padding-right: 5%;
   background: transparent;
   border-color: #dbd6d6;
 }
