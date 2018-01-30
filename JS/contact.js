@@ -1,4 +1,4 @@
-$(document).ready(function() {
+i$(document).ready(function() {
   $('#contact-form').submit(function(e) {
     var fName    = document.getElementById('inputFName')
     var lName    = document.getElementById('inputLName')
