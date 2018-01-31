@@ -7,74 +7,157 @@
   font-family: "CaviarDreams";
   src: url("../Fonts/caviar_dreams/CaviarDreams_Bold.ttf");
 }
+/********** Nav Bar Styling for desktop *************/
 
-/********** Nav Bar Styling *************/
+ #logo {
+  width: 20vw;
+  position: fixed;
+  position: absolute;
+  margin-right: 80vw;
+ }
 
-#logo {
- width: 20vw;
- position: fixed;
- position: absolute;
- margin-right: 80vw;
+ .navBar {
+  width: 100vw;
+  height: 25vh;
+  margin-top: -1%;
+ }
+
+ .navBar nav{
+  font-family: "grec";
+  background-color: #Dbd6d6;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+  height: 25vh;
+ }
+
+ .navBar nav ul {
+  display: flex;
+  padding-left: 20vw;
+  justify-content: space-around;
+  list-style: none;
+ }
+
+ ul button {
+  background-color: #Dbd6d6;
+  font-family: "grec";
+  width: 13vw;
+  font-size: 1em;
+  padding-left: 5%;
+  padding-right: 5%;
+  background: transparent;
+  border-color: #dbd6d6;
+  border: none;
+ }
+
+ .favicons{
+  display: flex;
+  text-decoration: none;
+  flex-direction: row;
+  width: 35vw;
+  margin-left: 30vw;
+  justify-content: space-around;
+ }
+
+ nav a {
+  text-decoration: none;
+  font-size: 1.4em;
+ }
+
+ /********** bodyStyling for desktop*************/
+
+ #Santorini{
+  width: 100vw;
+  height: 100vh;
+
+
+ }
+ body{
+  /*background-image: url("../Images/Santorini.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  padding: 0;
+  margin: 0;
+ }
+
+
+/************ nav bar Media querry for Iphone  ************/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+ #logo{
+  width: 80vw;
+  padding-left: 10vw;
+  padding-top: 3vh;
+ }
+
+ .navBar nav{
+  background-color: lightblue;
+  font-family: "grec";
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+
+ }
+
+ .navBar nav ul{
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-top: 30vh;
+  margin-right: 80vw;
+
+ }
+
+ ul button{
+
+
+ }
+
+ .favicons a{
+  z-index: 2;
+  margin-top: 25vh;
+  padding: 10px;
+  color: black;
+ }
+
+ nav a{
+
+ }
+
+/******* bodyStyling for Iphone *******/
+
+ #Santorini{
+  z-index: 1;
+ }
+
+
 }
 
-.navBar {
- width: 100vw;
- height: 25vh;
- margin-top: -1%;
+/************ nav bar Media querry for tablet  ************/
+
+@media only screen and (min-width: 481px) and (max-width: 730px) {
+    .navBar nav{
+        background-color: red;
+    }
 }
 
-.navBar nav{
- font-family: "grec";
- background-color: #Dbd6d6;
- display: flex;
- flex-direction: column;
- padding-top: 2%;
- height: 19vh;
-}
-
-.navBar nav ul {
- display: flex;
- padding-left: 20vw;
- justify-content: space-around;
- list-style: none;
-}
-
-ul button {
- background-color: #Dbd6d6;
- font-family: "grec";
- width: 13vw;
- font-size: 1em;
- padding-left: 5%;
- padding-right: 5%;
- background: transparent;
- border-color: #dbd6d6;
- border: none;
-}
-
-.favicons{
- display: flex;
- text-decoration: none;
- flex-direction: row;
- width: 35vw;
- margin-left: 30vw;
- justify-content: space-around;
-}
-
-nav a {
- text-decoration: none;
- font-size: 1.4em;
-}
-
-/********** bodyStyling *************/
 
 
-body{
- background-image: url("../Images/Santorini.jpg");
- background-repeat: no-repeat;
- background-size: cover;
- padding: 0;
- margin: 0;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
