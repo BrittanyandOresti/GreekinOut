@@ -35,17 +35,6 @@
   /*vertical-align: center;*/
 }
 
-ul button {
-  background-color: #Dbd6d6;
-  font-family: "grec";
-  width: 13vw;
-  font-size: 1em;
-  padding-left: 5%;
-  padding-right: 5%;
-  background: transparent;
-  border-color: #dbd6d6;
-}
-
 .favicons{
   display: flex;
   text-decoration: none;
