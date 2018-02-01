@@ -9,76 +9,61 @@
 }
 /********** Nav Bar Styling for desktop *************/
 
- #logo {
-  width: 20vw;
-  position: fixed;
-  position: absolute;
-  margin-right: 80vw;
- }
+#logo {
+ width: 20vw;
+ position: fixed;
+ position: absolute;
+ margin-right: 80vw;
+}
 
- .navBar {
-  width: 100vw;
-  height: 25vh;
-  margin-top: -1%;
- }
+.navBar {
+ width: 100vw;
+ height: 25vh;
+ margin-top: -1%;
+}
 
- .navBar nav{
-  font-family: "grec";
-  background-color: #Dbd6d6;
-  display: flex;
-  flex-direction: column;
-  padding-top: 2%;
-  height: 25vh;
- }
+.navBar nav{
+ font-family: "grec";
+ background-color: #Dbd6d6;
+ display: flex;
+ flex-direction: column;
+ padding-top: 2%;
+ height: 25vh;
+}
 
- .navBar nav ul {
-  display: flex;
-  padding-left: 20vw;
-  justify-content: space-around;
-  list-style: none;
- }
+.navBar nav ul {
+ display: flex;
+ padding-left: 20vw;
+ justify-content: space-around;
+ list-style: none;
+}
 
- ul button {
-  background-color: #Dbd6d6;
-  font-family: "grec";
-  width: 13vw;
-  font-size: 1em;
-  padding-left: 5%;
-  padding-right: 5%;
-  background: transparent;
-  border-color: #dbd6d6;
-  border: none;
- }
+.favicons{
+ display: flex;
+ text-decoration: none;
+ flex-direction: row;
+ width: 35vw;
+ margin-left: 30vw;
+ justify-content: space-around;
+}
 
- .favicons{
-  display: flex;
-  text-decoration: none;
-  flex-direction: row;
-  width: 35vw;
-  margin-left: 30vw;
-  justify-content: space-around;
- }
 
- nav a {
-  text-decoration: none;
-  font-size: 1.4em;
- }
+nav a {
+ text-decoration: none;
+ font-size: 1.4em;
+}
 
  /********** bodyStyling for desktop*************/
 
- #Santorini{
-  width: 100vw;
-  height: 100vh;
+#Santorini{
+ width: 100vw;
+ height: 100vh;
 
-
- }
- body{
-  /*background-image: url("../Images/Santorini.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;*/
-  padding: 0;
-  margin: 0;
- }
+}
+body{
+ padding: 0;
+ margin: 0;
+}
 
 
 /************ nav bar Media querry for Iphone  ************/
@@ -108,10 +93,6 @@
 
  }
 
- ul button{
-
-
- }
 
  .favicons a{
   z-index: 2;
@@ -140,57 +121,3 @@
         background-color: red;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*word "Charleston in logo box below"*/
-/*.Charleston p {*/
-  color: #333334;
-  position: relative;
-  margin-top: -8vh;
-  font-family: "grec";
-  word-spacing: .2em;
-  line-height: 1.2em;
-  font-size: 4em;
-  /*margin-left: 10vw;*/
-  text-align: center;
-  text-shadow: 1px 1px 1px black
-}
-
-
-/*logo in the middle below*/
-/*body {
-width: 100vw;
-height: 100vh;
-background-image: url("../Images/santorini.jpeg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-}
-
-img {
-margin-left: 20vw;
-margin-top: 12vh;
-padding: 5%;
-width: 50vw;
-background-color:rgba(219, 214, 214, 0.8);
-border-radius: 10%;
-}*/
