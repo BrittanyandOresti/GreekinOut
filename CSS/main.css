@@ -67,10 +67,7 @@ body{
 
 
 /************ nav bar Media querry for Iphone  ************/
-@media all (min-width: 320px)
-   and (max-width: 480px)
-   and (min-device-width: 320px)
-   and (max-device-width: 480px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
   #Santorini {
     width: 100vw;
