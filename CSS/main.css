@@ -67,7 +67,7 @@ body{
 
 
 /************ nav bar Media querry for Iphone  ************/
-@media (min-width: 320px)
+@media all (min-width: 320px)
    and (max-width: 480px)
    and (min-device-width: 320px)
    and (max-device-width: 480px) {
