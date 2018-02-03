@@ -146,7 +146,7 @@ body{
   .navicon--active:before {
     -webkit-box-shadow: transparent 0 0 0 0;
             box-shadow: transparent 0 0 0 0;
-    /*top: 5vh;*/
+    top: 15px;
     -webkit-transform: rotate(225deg);
             transform: rotate(225deg);
   }
