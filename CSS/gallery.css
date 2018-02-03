@@ -7,46 +7,184 @@
   position: fixed;
   position: absolute;
   margin-right: 80vw;
-}
+  padding-left: 1vw;
+  padding-top: 2vh;
 
+}
+header {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+.logo {
+    background-color: rgba(255, 0, 0, 0.9);
+}
 .navBar {
     width: 100vw;
     height: 25vh;
     margin-top: -1%;
+    font-family: "grec";
+    background-color: #Dbd6d6;
 }
 
-.navBar nav{
-  font-family: "grec";
-  background-color: #Dbd6d6;
-  display: flex;
-  flex-direction: column;
-  padding-top: 2%;
-  height: 19vh;
+.bar{
+ display: flex;
+ flex-direction: row;
+ padding-top: 1vh;
+ padding-left: 20vw;
+ padding-right: 3vw;
+ list-style: none;
+ justify-content: space-around;
 }
-
-.navBar nav ul {
-  display: flex;
-  padding-left: 20vw;
-  /*justify-content: space-between;*/
-  justify-content: space-around;
-  /*width: 80vw;*/
-  /*padding-top: 3vh;*/
-  list-style: none;
-  /*vertical-align: center;*/
+.bar a{
+ font-size: 2em;
+ text-decoration: none;
 }
-
 
 .favicons{
-  display: flex;
-  text-decoration: none;
-  flex-direction: row;
-  width: 35vw;
-  margin-left: 30vw;
-  justify-content: space-around;
+ display: flex;
+ flex-direction: row;
+ list-style: none;
+ width: 55vw;
+ margin-left: 30vw;
+ justify-content: space-around;
+ padding-top: 3vh;
+}
+body{
+ margin: 0;
+ padding: 0;
+}
+             /*mobol below*/
+@media screen  and (max-device-width: 480px){
+
+ .navicon {
+   width: 100%;
+   background: transparent;
+   background-color: yellow;
+   margin: 80px auto 40px;
+   position: relative;
+   height: 30px;
+   width: 50px;
+   display: block;
+   z-index: 99;
+   transition: linear 0.5s all;
+   &:before,
+   &:after {
+     background: purple;
+     backface-visibility: hidden;
+     content: "";
+     height: 3px;
+     left: 0;
+     transition: 0.8s ease;
+     width: 45px;
+   }
+   &:before {
+     box-shadow: blue 0 14px 0 0;
+     position: absolute;
+     top: 0;
+   }
+   &:after {
+     position: absolute;
+     top: 28px;
+   }
+   &--active {
+     margin-top: 20px;
+     transition: linear 0.5s all;
+     &:before {
+       box-shadow: transparent 0 0 0 0;
+       top: 15px;
+       transform: rotate(225deg);
+     }
+     &:after {
+       top: 15px;
+       transform: rotate(315deg);
+     }
+   }
+ }
+
+ .navBar {
+   display: block;
+   margin: 20px auto;
+   width: 30%;
+   background-color: orange;
+     /*rgba(255, 255, 255, .8);*/
+   padding: 15px;
+   display: block;
+   opacity: 0;
+   transition: ease-in 0.5s all;
+   transform: translateY(-200%);
+   min-width: 320px;
+   &--active {
+     display: block;
+     opacity: 1;
+     transition: ease-in 0.5s all;
+     transform: translateY(0);
+   }
+   &__bar {
+     margin-bottom: 25px;
+     li {
+       width: 25%;
+       display: block;
+       margin: 10px auto;
+       a {
+         text-decoration: none;
+         color: green;
+         display: block;
+         text-align: center;
+         font-size: 30px;
+         text-transform: uppercase;
+         border-bottom: 2px solid transparent;
+         transition: linear 0.5s all;
+         font-weight: 500;
+         padding: 5px 0;
+         span {
+           text-transform: lowercase;
+         }
+         &:hover {
+           color: orange;
+           border-bottom: 2px solid black;
+           transition: linear 0.5s all;
+           transform: scale(1.15);
+           font-weight: 700;
+         }
+       }
+     }
+   }
+ }
+
+ .favicons {
+   display: block;
+   width: 70%;
+   margin: 25px auto;
+   text-align: center;
+   font-size: 0;
+   li {
+     display: inline-block;
+     width: 25%;
+    text-align: center;
+     a {
+       text-align: center;
+       color: black;
+       font-size: 25px;
+       transition: linear 0.5s all;
+       &:hover {
+         color: #db5523;
+         transition: linear 0.5s all;
+       }
+     }
+   }
+ }
+
+header{
+ background-color: red;
 }
 
-nav a {
-  text-decoration: none;
-  font-size: 1.4em;
+
+
+
+
+.navBar{
+ width: 100vw;
+ background-color: red;
+}
+
 
 }
