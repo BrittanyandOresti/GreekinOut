@@ -1,0 +1,74 @@
+
+@font-face {
+ font-family: "grec";
+ src: url("../Fonts/Optio_0.ttf");
+}
+
+@font-face {
+ font-family: "CaviarDreams";
+ src: url("../Fonts/caviar_dreams/CaviarDreams_Bold.ttf");
+}
+/********** Nav Bar Styling *************/
+
+#logo {
+ width: 20vw;
+ position: fixed;
+ position: absolute;
+ margin-right: 80vw;
+}
+
+.navBar {
+ width: 100vw;
+ height: 25vh;
+ margin-top: -1%;
+}
+
+.navBar nav{
+ font-family: "grec";
+ background-color: #Dbd6d6;
+ display: flex;
+ flex-direction: column;
+ padding-top: 2%;
+ height: 19vh;
+}
+
+.navBar nav ul {
+ display: flex;
+ padding-left: 20vw;
+ justify-content: space-around;
+ list-style: none;
+}
+
+.favicons{
+ display: flex;
+ text-decoration: none;
+ flex-direction: row;
+ width: 35vw;
+ margin-left: 30vw;
+ justify-content: space-around;
+}
+
+nav a {
+ text-decoration: none;
+ font-size: 1.4em;
+}
+
+
+/************* Form portion of page***************/
+body{
+ padding: 0;
+ margin: 0;
+ background-image: url("../Images/Donkeys2.jpeg");
+ width: 100vw;
+ height: 100vh;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+h1{
+ color: #Dbd6d6;
+ font-family: "grec";
+ word-spacing: .5em;
+ letter-spacing: .2em;
+ padding-left: 2vw;
+}

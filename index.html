@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  </head>
 
+
  <header>
   <div class="navBar">
    <nav>
@@ -16,16 +17,17 @@
     </div>
 
     <div class="favicons">
-     <a href="https://www.facebook.com/Greekin-Out-178764729381099/"><i class="fa fa-facebook-square" style="font-size:45px"></i></a>
+     <a href="https://www.facebook.com/Greekin-Out-178764729381099/"><i class="fa fa-facebook-square" ></i></a>
 
-     <a href="HTML/ContactUs.html"><i class="fa fa-envelope" style="font-size:45px"></i></a>
+     <a href="HTML/ContactUs.html"><i class="fa fa-envelope"></i></a>
 
-     <a href="tel:843-996-0543"><i class="fa fa-phone" style="font-size:45px"></i></a>
+     <a href="tel:843-996-0543"><i class="fa fa-phone"></i></a>
 
-     <a href="https://www.instagram.com/greekinoutsc/"><i class="fa fa-instagram" style="font-size:45px"></i></a>
+     <a href="https://www.instagram.com/greekinoutsc/"><i class="fa fa-instagram"></i></a>
     </div>
-
-     <ul>
+    
+    <div classname="topnav">
+     <ul id="myNavBar">
       <li><a href="#"><h3>Home</h3></a></li>
 
       <li><a href="HTML/Calendar.html"><h3>Calendar</h3></a></li>
@@ -33,6 +35,9 @@
       <li><a href="HTML/ContactUs.html"><h3>Contact Us</h3></a></li>
 
       <li><a href="HTML/Menu.html"><h3>Menu</h3></a></li>
+
+      <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
+    </div>
 
       <!-- <li><a href="HTML/Gallery.html"><h3>Gallery</h3></a></li> -->
 
@@ -45,6 +50,18 @@
 
  <body>
 <img src="Images/Santorini.jpg" alt="" id="Santorini">
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myNavBar");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
  </body>
 
 </html>
