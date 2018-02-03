@@ -70,14 +70,14 @@ body{
   @media screen and (max-device-width: 480px) {
 
   #logo {
-    margin-left: 4vw;
+  margin-left: 4vw;
    width: 85vw;
    height: 17vh;
    position: fixed;
    position: absolute;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 12px;
-  margin-top: -9px;
+  margin-top: 1vh;
   border-radius: 2%;
   }
 
@@ -103,18 +103,12 @@ body{
     margin: 15px;
   }
 
-  small {
-    font-size: 12px;
-    text-transform: lowercase;
-    font-weight: 300;
-    text-align: center;
-    display: block;
-  }
-
   .navicon {
     width: 100%;
+    color: black;
+    padding-top: 10px;
     background: transparent;
-    margin: 80px auto 40px;
+    margin: 130px auto 40px;
     position: relative;
     height: 30px;
     width: 50px;
@@ -145,14 +139,14 @@ body{
     top: 28px;
   }
   .navicon--active {
-    margin-top: 20px;
+    margin-top: 135px;
     -webkit-transition: linear 0.5s all;
     transition: linear 0.5s all;
   }
   .navicon--active:before {
     -webkit-box-shadow: transparent 0 0 0 0;
             box-shadow: transparent 0 0 0 0;
-    top: 15px;
+    /*top: 5vh;*/
     -webkit-transform: rotate(225deg);
             transform: rotate(225deg);
   }
