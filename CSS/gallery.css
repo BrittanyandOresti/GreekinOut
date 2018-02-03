@@ -9,8 +9,14 @@
   margin-right: 80vw;
   padding-left: 1vw;
   padding-top: 2vh;
-}
 
+}
+header {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+.logo {
+    background-color: rgba(255, 0, 0, 0.9);
+}
 .navBar {
     width: 100vw;
     height: 25vh;
