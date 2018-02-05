@@ -6,45 +6,38 @@
   <title>Contact Us</title>
   <link rel="stylesheet" href="../CSS/ContactUs.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="../altertifyjs/alertify.min.js"></script>
-  <link rel="stylesheet" href="../alertify/alertify.min.css" />
-<!-- include a theme -->
-<link rel="stylesheet" href="../alertify/css/themes/default.min.css" />
+
+   <!-- mail -->
   <script type="text/javascript"src="../JS/our.js"></script>
+   <!--hamburger links  -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  </head>
 
  <header>
-  <div class="navBar">
-   <nav>
-    <div class="logo">
-     <img src="../Images/logo.png" alt="" id="logo" >
-    </div>
+  <div class="logo">
+   <img src="../Images/logo.png" alt="" id="logo" >
+  </div>
+<br>
 
-    <div class="favicons">
-     <a href="https://www.facebook.com/Greekin-Out-178764729381099/"><i class="fa fa-facebook-square" style="font-size:45px"></i></a>
+<a href="#nowhere" class="navicon"></a>
 
-     <a href="tel:843-996-0543"><i class="fa fa-phone" style="font-size:45px"></i></a>
+  <div class="toggle">
+   <ul class="social">
+    <li><a href="https://www.facebook.com/Greekin-Out-178764729381099/"><i class="fa fa-facebook-square"></i></a></li>
+    <li> <a href="tel:843-996-0543"><i class="fa fa-phone" ></i></a></li>
+    <li> <a href="https://www.instagram.com/greekinoutsc/"><i class="fa fa-instagram"></i></a></li>
+   </ul>
 
-     <a href="https://www.instagram.com/greekinoutsc/"><i class="fa fa-instagram" style="font-size:45px"></i></a>
-    </div>
+   <ul class="toggle__menu">
+    <li><a href="../index.html"><h3>Home</h3></a></li>
+    <li><a href="Calendar.html"><h3>Calendar</h3></a></li>
+    <li><a href="#"><h3>Contact Us</h3></a></li>
+    <li><a href="Menu.html"><h3>Menu</h3></a></li>
+   </ul>
+  </div>
+ </header>
 
-     <ul>
-      <li><a href="../index.html"><h3>Home</h3></a></li>
-
-      <li><a href="Calendar.html"><h3>Calendar</h3></a></li>
-
-      <li><a href="#"><h3>Contact Us</h3></a></li>
-
-      <li><a href="Menu.html"><h3>Menu</h3></a></li>
-
-      <!-- <li><a href="HTML/Gallery.html"><h3>Gallery</h3></a></li> -->
-
-      <!-- <li><a href="HTML/our_story.html"><h3>Our Story</h3></a></li> -->
-
-     </ul>
-    </nav>
-   </div>
-  </header>
 
  <body>
   <form id="contact-form" action="https://formspree.io/greekinoutsc@gmail.com" method="POST">
@@ -72,8 +65,6 @@
 
    <div class="info3">
     <textarea name="message" rows="8" cols="80" id="inputMessage" placeholder="Additional Comments"></textarea>
-
-    <!-- <input id="inputMessage" type="textarea"  name="message" value="" placeholder="Additional Comments" maxlength="100" columns="20" required> -->
    </div>
 
    <div class="info4">
@@ -85,6 +76,8 @@
   </form>
 
   <script type="text/javascript"src="../JS/contact.js"></script>
-  <script src="../altertifyjs/alertify.min.js"></script>
+
+  <script src="../JS/hamburger.js"></script>
+
  </body>
  </html>

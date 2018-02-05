@@ -3,11 +3,6 @@
   src: url("../Fonts/Optio_0.ttf");
 }
 
-@font-face {
-  font-family: "CaviarDreams";
-  src: url("../Fonts/caviar_dreams/CaviarDreams_Bold.ttf");
-}
-
 body {
   background-image: url("../Images/Santorini.jpg");
   background-position: top;

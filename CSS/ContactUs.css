@@ -1,16 +1,201 @@
-
 @font-face {
  font-family: "grec";
  src: url("../Fonts/Optio_0.ttf");
 }
-
-@font-face {
- font-family: "CaviarDreams";
- src: url("../Fonts/caviar_dreams/CaviarDreams_Bold.ttf");
+/*Mobile*/
+@media screen and (max-device-width: 480px) {
+header{
+ z-index: 1;
 }
+#logo {
+margin-left: 4vw;
+ width: 85vw;
+ height: 17vh;
+ position: fixed;
+ position: absolute;
+background-color: rgba(255, 255, 255, 0.5);
+padding: 12px;
+margin-top: 1vh;
+border-radius: 2%;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 25px;
+  margin: 15px;
+}
+
+.navicon {
+  width: 100%;
+  color: black;
+  padding-top: 10px;
+  background: transparent;
+  margin: 130px auto 40px;
+  position: relative;
+  height: 30px;
+  width: 50px;
+  display: block;
+  z-index: 99;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+}
+.navicon:before, .navicon:after {
+  background: #fff;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  content: "";
+  height: 3px;
+  left: 0;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  width: 45px;
+}
+.navicon:before {
+  -webkit-box-shadow: #fff 0 14px 0 0;
+          box-shadow: #fff 0 14px 0 0;
+  position: absolute;
+  top: 0;
+}
+.navicon:after {
+  position: absolute;
+  top: 28px;
+}
+.navicon--active {
+  margin-top: 135px;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+}
+.navicon--active:before {
+  -webkit-box-shadow: transparent 0 0 0 0;
+          box-shadow: transparent 0 0 0 0;
+  top: 15px;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+.navicon--active:after {
+  top: 15px;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+
+.toggle {
+  display: block;
+  margin: 20px auto;
+  width: 30%;
+  height: 55vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: block;
+  opacity: 0;
+  -webkit-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  min-width: 320px;
+}
+.toggle--active {
+ z-index: -1;
+  display: block;
+  opacity: 1;
+  -webkit-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+
+}
+.toggle__menu {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-left: -18%;
+}
+.toggle__menu li {
+  width: 40%;
+  display: block;
+  margin: 10px auto;
+
+}
+
+.toggle__menu li a {
+  font-size: 2em;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+  font-weight: 500;
+}
+
+.toggle__menu li a:hover {
+  color: #db5523;
+  border-bottom: 2px solid #db5523;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  font-weight: 700;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  display: block;
+  width: 100%;
+  margin-left: -40px;
+  text-align: center;
+  font-size: 1.2em;
+}
+.social li {
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  display: inline-block;
+  width: 15%;
+  text-align: center;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.social li a {
+  text-align: center;
+  color: #000;
+  font-size: 2em;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+}
+.social li a:hover {
+  color: #db5523;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+ }
+
+/******* bodyStyling for mobile *******/
+body {
+ z-index: 1000;
+  background-image: url("../Images/santorini.jpeg");
+  background-position: top;
+  background-repeat: no-repeat;
+  font-family: "grec";
+  height: 100vh;
+}
+ form, .info1, .info2{
+  display: flex;
+  flex-direction: column;
+  position: auto;
+ }
+
+
+
+
+}
+
+
+
 /********** Nav Bar Styling *************/
 
-#logo {
+/*#logo {
  width: 20vw;
  position: fixed;
  position: absolute;
@@ -56,7 +241,7 @@ nav a {
 
 /************* Form portion of page***************/
 
-body{
+/*body{
  padding: 0;
  margin: 0%;
  width: 100vw;
@@ -104,4 +289,4 @@ border-color: black;
 border-width: thick;
 font-size: 2em;
 color: #1957af;
-}
+}*/*/
