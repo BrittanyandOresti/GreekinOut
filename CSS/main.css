@@ -20,6 +20,12 @@ body {
   margin: 0;
 }
 
+	@media all and (orientation:landscape) {
+    #logo {
+      width: 40%;
+    }
+  }
+
 @media screen and (min-device-width: 481px) and (max-device-width: 900px) {
   header {
     top: 0;
