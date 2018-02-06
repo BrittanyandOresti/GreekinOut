@@ -5,7 +5,7 @@
 
 /************  Landscape Mobile  **************/
 @media only screen
-  and (min-device-width: 375px)
+  and (min-device-width: 350px)
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
@@ -21,33 +21,101 @@
     .social li a{
       font-size: 1em;
     }
-
 }
 
-/********** mobile *************/
+/*************  Mobile  *************/
 @media screen and (max-device-width: 480px) {
 
   .logo #logo {
-    width: 34vw;
+    width: 36vw;
   }
-
+  .favicons {
+    padding-left: 19%;
+  }
+  .favicons a {
+    margin-left: 10%;
+  }
   .favicons i{
     font-size: 1.3em;
     padding: 10px;
-    margin-left: 90%;
-    margin-right: -5%;
   }
 
   .toggle__menu {
     font-size: .8em;
+    margin-left: -10%;
   }
 
   body {
     margin: 0;
     padding: 0;
-    
   }
 }
+
+/************ Tablet Styling ***************/
+@media screen and (min-device-width:768px) {
+  .logo #logo {
+    width: 35vw;
+    padding: 10px;
+  }
+  .favicons {
+    font-size: 2em;
+    padding-left: 20vw;
+    padding-top: 20px;
+  }
+  .toggle__menu {
+    padding-top: 25px;
+    font-size: 1.2em;
+  }
+}
+
+/*********** Tablet Landscape ************/
+@media screen and (min-device-width:768px)
+and (max-device-width: 1200px)
+and (orientation: landscape) {
+  .logo #logo {
+    width: 25vw;
+    padding: 10px;
+  }
+  .favicons {
+    font-size: 2em;
+    padding-left: 20vw;
+    padding-top: 20px;
+  }
+  .toggle__menu {
+    padding-top: 25px;
+    font-size: 1.2em;
+  }
+}
+
+/******** Large Tablet Portrait *********/
+@media screen and (min-device-width:1008px)
+and (max-device-width: 1200px)
+and (orientation: portrait) {
+  .favicons a{
+    font-size: 2em;
+    padding: 10px;
+  }
+  .toggle__menu {
+    font-size: 1.6em;
+  }
+}
+
+/******** Large Tablet Landscape *********/
+@media screen and (min-device-width:1300px)
+/*and (max-device-width: 1200px)*/
+and (orientation: landscape) {
+  .logo #logo {
+    width: 23vw;
+  }
+  .favicons a{
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  .toggle__menu {
+    font-size: 1.2em;
+  }
+}
+
 
   #logo {
    width: 20vw;
@@ -92,9 +160,6 @@
    text-decoration: none;
    font-size: 1.4em;
   }
-
-/********** body Styling *************/
-
 
   iframe{
    z-index: 1000;
