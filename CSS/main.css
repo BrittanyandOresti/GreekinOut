@@ -3,6 +3,8 @@
   src: url("../Fonts/Optio_0.ttf");
 }
 
+/************ Generic **********/
+
 body {
   background-image: url("../Images/Santorini.jpg");
   background-position: top;
@@ -14,38 +16,135 @@ body {
   padding: 0;
   margin: 0;
 }
+/************  Landscape Mobile  **************/
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
 
-	@media all and (orientation:landscape) {
-    #logo {
-      width: 40%;
+    header .toggle {
+      height: 39vh;
     }
+
+    header .toggle__menu {
+      padding-bottom: 20px;
+    }
+
+    .social li a{
+      font-size: 1em;
+    }
+
+}
+
+/********** Tablet portrait ************/
+@media only screen
+  and (min-device-width: 1000px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #logo {
+      width: 22vw;
+    }
+
+    .toggle__menu {
+      font-size: 1.7em;
+    }
+
+    .social li a{
+      font-size: 2em;
+      padding: 10px;
+    }
+}
+
+
+/************  Tablet  *************/
+@media screen and (min-device-width: 616px) and (max-device-width: 900px) {
+
+  .toggle {
+   font-family: "grec";
+   background-color: #Dbd6d6;
+   display: flex;
+   flex-direction: column;
+   padding-top: 2%;
+   height: 25vh;
   }
 
-@media screen and (min-device-width: 481px) and (max-device-width: 900px) {
+  .toggle ul {
+   display: flex;
+   padding-left: 20vw;
+   justify-content: space-around;
+   list-style: none;
+  }
+
+  .social {
+   display: flex;
+   text-decoration: none;
+   flex-direction: row;
+   width: 35vw;
+   margin-left: 30vw;
+   justify-content: space-around;
+   font-size: 2em;
+  }
+
+  .social li {
+     font-size: 1.2em;
+  }
+
+  .toggle a {
+   text-decoration: none;
+   font-size: 1.4em;
+  }
+
+  #Santorini{
+   width: 100vw;
+   height: 100vh;
+
+  }
+
+  .toggle {
+   width: 100vw;
+   height: 25vh;
+   margin-top: -2.5%;
+  }
+
   header {
     top: 0;
     margin-top: -1%;
   }
+
   #logo{
-   width: 30vw;
+   width: 40vw;
    position: absolute;
-   /*position: absolute;*/
    padding: 2%;
+  }
+
+  .social li{
+    font-size: 1.2em;
+    padding: 10px;
+    width: 5%;
+    text-wrap: wrap;
+  }
+
+  .toggle__menu {
+    width: 70vw;
+    padding-right: 5%;
+    margin-left: -5%;
   }
 
 }
 
 /********** Nav Bar Styling for desktop *************/
-@media screen and (min-device-width: 800px) {
+@media screen and (min-device-width: 900px) {
 
 #logo {
- width: 21vw;
+ width: 30vw;
  position: fixed;
  margin-right: 80vw;
  padding: 2%;
 }
 
-}
 .toggle {
  width: 100vw;
  height: 25vh;
@@ -68,23 +167,24 @@ body {
  list-style: none;
 }
 
-.social   {
+.social {
  display: flex;
  text-decoration: none;
  flex-direction: row;
  width: 35vw;
  margin-left: 30vw;
  justify-content: space-around;
- font-size: 1.4em;
+ font-size: 2em;
 }
 
+.social li {
+   font-size: 1.2em;
+}
 
 .toggle a {
  text-decoration: none;
  font-size: 1.4em;
 }
-
- /********** bodyStyling for desktop*************/
 
 #Santorini{
  width: 100vw;
@@ -95,9 +195,9 @@ body{
  padding: 0;
  margin: 0;
 }
-
-/************ nav bar Media querry for Iphone  ************/
-  @media screen and (max-device-width: 480px) {
+}
+/************ nav bar Media querry for Mobile  ************/
+  @media screen and (max-device-width: 615px) {
 
   #logo {
   margin-left: 4vw;
@@ -119,26 +219,12 @@ body{
     height: 100vh;
   }
 
-  h1 {
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 40px;
-    text-align: center;
-  }
-
-  h3 {
-    text-align: center;
-    font-weight: 900;
-    font-size: 15px;
-    margin: 15px;
-  }
-
   .navicon {
     width: 100%;
     color: black;
     padding-top: 10px;
     background: transparent;
-    margin: 130px auto 40px;
+    margin: 210px auto 40px;
     position: relative;
     height: 30px;
     width: 50px;
@@ -277,13 +363,36 @@ body{
   }
 }
 
-/******* bodyStyling for Iphone *******/
-
  #Santorini{
   z-index: 1;
  }
 
+/***********  Large Desktop ************/
+@media screen and (min-device-width: 1100px) {
 
+  #logo {
+   width: 25vw;
+   position: fixed;
+   padding: 2%;
+  }
+  .toggle__menu {
+    font-size: 1.5em;
+  }
 }
 
-/************ nav bar Media querry for tablet  ************/
+@media screen and (min-device-width: 1400px) {
+
+  #logo {
+   width: 20vw;
+   position: fixed;
+   padding: 2%;
+  }
+
+  .toggle__menu {
+    font-size: 1.5em;
+  }
+
+  .social li{
+    font-size: 1.6em;
+  }
+}
