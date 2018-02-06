@@ -3,77 +3,119 @@
   src: url("../Fonts/Optio_0.ttf");
 }
 
-@font-face {
-  font-family: "CaviarDreams";
-  src: url("../Fonts/caviar_dreams/CaviarDreams_Bold.ttf");
-}
-/********** Nav Bar Styling *************/
+/************  Landscape Mobile  **************/
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
 
-#logo {
- width: 20vw;
- position: fixed;
- position: absolute;
- margin-right: 80vw;
-}
+    header .toggle {
+      height: 39vh;
+    }
 
-.navBar {
- width: 100vw;
- height: 25vh;
- margin-top: -1%;
-}
+    header .toggle__menu {
+      padding-bottom: 20px;
+    }
 
-.navBar nav{
- font-family: "grec";
- background-color: #Dbd6d6;
- display: flex;
- flex-direction: column;
- padding-top: 2%;
- height: 19vh;
+    .social li a{
+      font-size: 1em;
+    }
+
 }
 
-.navBar nav ul {
- display: flex;
- padding-left: 20vw;
- justify-content: space-around;
- list-style: none;
+/********** mobile *************/
+@media screen and (max-device-width: 480px) {
+
+  .logo #logo {
+    width: 34vw;
+  }
+
+  .favicons i{
+    font-size: 1.3em;
+    padding: 10px;
+    margin-left: 90%;
+    margin-right: -5%;
+  }
+
+  .toggle__menu {
+    font-size: .8em;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    
+  }
 }
 
+  #logo {
+   width: 20vw;
+   position: fixed;
+   position: absolute;
+   margin-right: 80vw;
+  }
 
-.favicons{
- display: flex;
- text-decoration: none;
- flex-direction: row;
- width: 35vw;
- margin-left: 30vw;
- justify-content: space-around;
-}
+  .navBar {
+   width: 100vw;
+   height: 25vh;
+   margin-top: -1%;
+  }
 
-nav a {
- text-decoration: none;
- font-size: 1.4em;
-}
+  .navBar nav{
+   font-family: "grec";
+   background-color: #Dbd6d6;
+   display: flex;
+   flex-direction: column;
+   padding-top: 2%;
+   height: 19vh;
+  }
+
+  .navBar nav ul {
+   display: flex;
+   padding-left: 20vw;
+   justify-content: space-around;
+   list-style: none;
+  }
+
+
+  .favicons{
+   display: flex;
+   text-decoration: none;
+   flex-direction: row;
+   width: 35vw;
+   margin-left: 30vw;
+   justify-content: space-around;
+  }
+
+  nav a {
+   text-decoration: none;
+   font-size: 1.4em;
+  }
 
 /********** body Styling *************/
 
 
-iframe{
- z-index: 1000;
- height: 70vh;
- width: 70vw;
- margin-left: 13vw;
- margin-top: 3vh;
-}
-#map{
- position: relative;
- top: 0;
- z-index: 1;
-}
-body{
-padding: 0;
-margin: 0%;
-width: 100vw;
-height: 100vh;
-background-image: url("../Images/CharlestonMap2.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-}
+  iframe{
+   z-index: 1000;
+   height: 70vh;
+   width: 70vw;
+   margin-left: 13vw;
+   margin-top: 3vh;
+  }
+
+  #map{
+   position: relative;
+   top: 0;
+   z-index: 1;
+  }
+
+  body{
+  padding: 0;
+  margin: 0%;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../Images/CharlestonMap2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
