@@ -92,6 +92,11 @@ body{
       flex-direction: column;
       width: 90vw;
     }
+    .toggle__menu{
+      width: 100vw;
+      margin-left: -18%;
+      margin-right: 3%;
+    }
     .toggle__menu li a {
       font-size: 1em;
     }
