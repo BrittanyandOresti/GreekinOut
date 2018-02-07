@@ -15,7 +15,7 @@ header {
   margin-left: -1%;
 }
 body {
-  background-image: url("../Images/Santorini.jpeg");
+  background-image: url("../Images/santorini.jpeg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -287,7 +287,7 @@ flex-direction: column;
   /*and (-webkit-min-device-pixel-ratio: 2) */
   {
     body {
-      background-image: url("../Images/Santorini.jpeg");
+      background-image: url("../Images/santorini.jpeg");
       background-size: cover;
       background-repeat: no-repeat;
       /*height: 100vh;*/
@@ -334,7 +334,7 @@ flex-direction: column;
       background-color: red;
     }
     body {
-      background-image: url("../Images/Santorini.jpeg");
+      background-image: url("../Images/santorini.jpeg");
       background-size: cover;
       background-repeat: no-repeat;
       /*height: 100vh;*/
