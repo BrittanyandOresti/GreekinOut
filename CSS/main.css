@@ -197,16 +197,12 @@ and (orientation: landscape){
  width: 35vw;
  margin-left: 30vw;
  justify-content: space-around;
- font-size: 2em;
-}
-
-.social li {
-   font-size: 1.2em;
+ font-size: 1.2em;
 }
 
 .toggle a {
  text-decoration: none;
- font-size: 1.4em;
+ font-size: 1em;
 }
 
 #Santorini{

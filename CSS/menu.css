@@ -8,6 +8,7 @@
  font-family: "CaviarDreams";
  src: url("../Fonts/caviar_dreams/CaviarDreams_Bold.ttf");
 }
+
 /********** Nav Bar Styling *************/
 
 #logo {
@@ -54,8 +55,6 @@ nav a {
  font-size: 1.4em;
 }
 
-/******** menu portion of page****/
-
 body{
   background-color: #1557b2;
   padding: 0;
@@ -65,184 +64,32 @@ body{
 }
 
 .Menu {
-display: flex;
-justify-content: space-around;
-padding-left: 5vw;
-padding-right: 5vw;
-
-}
-
-
-
-/*different menu disigh*/
-/*
-.top {
- display: flex;
- justify-content: center;
- flex-direction: column;
- padding-left: 13vw;
- width: 50vw;
- font-family: "grec";
- word-spacing: 7px;
-}
-
-.top #span1 {
-  float: center;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   justify-content: space-around;
-  width: 50vw;
-}
-.top img {
-  padding: 2%;
-  width: 15vw;
-  height: 8vw;
-  position: absolute;
-   clip: rect(0px,120px,200px,0px);
-}
-#span1 h1 {
-  letter-spacing: 2px;
-  font-size: 2.5em;
-  margin-left: 10vw;
-  margin-top: 10vh;
+  padding-left: 5vw;
   padding-right: 5vw;
 }
-#span1 h2 {
-  letter-spacing: 2px;
-  font-size: 2em;
-  line-height: 2em;
-  width: 25vw;
-}
-#span2 {
-  font-size: 1.2em;
-  word-spacing: 3px;
-  line-height: 1.7em;
-  text-align: center;
-  margin-top: -5vh;
-}
-.choose {
-  font-family: "grec";
-  text-align: center;
-}
-.choice1box {
-  display: flex;
-  flex-direction: column;
-}
-#span3 {
-  display: flex;
-  justify-content: space-between;
-  justify-content: space-around;
-  width: 50vw;
-  padding-left: 15%;
-  word-spacing: 15px;
-  letter-spacing: 2px;
-}
-#span3 h3, #span3 h2{
-  font-size: 1.8em;
-}
-#span4 {
-  margin-top: -3%;
-  word-spacing: 15px;
-  line-height: 1.4em;
-  letter-spacing: 2px;
-  display: flex;
-  width: 50vw;
-  padding-left: 15%;
-  font-size: 1em;
-}
-#span4 h3{
-  width: 30vw;
-  padding-left: 34%;
-}
-#span4 h4{
-  width: 30vw;
-  padding-left: 15%;
-  font-size:1.2em;
-}
 
-/******* Meat Section Number 2****/
-/*
-.meat {
-  width: 80vw;
-  padding-left: 10%;
-}
-.meat h1 {
-  word-spacing: 10px;
-  letter-spacing: 1px;
-  font-size: 1.8em;
-}
-#span5 {
-  letter-spacing: 1px;
-  width: 55vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  font-size: .9em;
-}
-.sauce {
-  padding-top: 5%;
-  width: 80vw;
-  padding-left: 10%;
-}
-.sauce h1 {
-  word-spacing: 10px;
-  letter-spacing: 1px;
-  font-size: 1.8em;
-}
-#span6 {
-  word-spacing: 10px;
-  letter-spacing: 1px;
-  width: 55vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-#span6 h2 {
-  width: 10vw;
-  line-height: 1.5em;
-}
-.side {
-  padding-top: 5%;
-  width: 80vw;
-  padding-left: 10%;
-}
-.side h1 {
-  word-spacing: 10px;
-  letter-spacing: 1px;
-  font-size: 1.8em;
-}
-#span7 {
-  word-spacing: 10px;
-  letter-spacing: 1px;
-  width: 55vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.salads {
- display: flex;
- justify-content: center;
- flex-direction: column;
- padding-left: 13vw;
- width: 50vw;
- word-spacing: 7px;
-}
-.salads img {
-  padding: 2%:
-  width: 15vw;
-  height: 8vw;
-  position: absolute;
-   clip: rect(0px,120px,200px,0px);
-}
-.salads h1 {
-  letter-spacing: 2px;
-  font-size: 4em;
-  margin-left: 10vw;
-  margin-top: 15vh;
-  padding-right: 5vw;
-  width: 50vw;
-}
+/************  Landscape Mobile  **************/
+@media screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px) {
+    #logo {
+      width: 35vw;
+    }
+    .navBar{
+      width: 100vw;
+    }
+    .favicons {
+      margin-right: -20%;
+    }
+    .favicons i {
+      font-size: 1em;
+    }
+    .Menu {
+      display: flex;
+      flex-direction: column;
+      width: 90vw;
+    }
+
+  }

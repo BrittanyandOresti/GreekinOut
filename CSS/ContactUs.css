@@ -2,36 +2,76 @@
  font-family: "grec";
  src: url("../Fonts/Optio_0.ttf");
 }
-/*Mobile*/
-@media screen and (max-device-width: 480px) {
-header{
- z-index: 1;
+#send {
+  background-color: white;
+  padding
 }
 #logo {
-margin-left: 4vw;
+ /*margin-left: 10px;*/
  width: 85vw;
- height: 17vh;
- position: fixed;
- position: absolute;
-background-color: rgba(255, 255, 255, 0.5);
-padding: 12px;
-margin-top: 1vh;
-border-radius: 2%;
+}
+header {
+  margin: 0;
+  margin-left: -1%;
+}
+body {
+  background-image: url("../Images/Santorini.jpeg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "grec";
+  /*height: 100vh;*/
 }
 
-h3 {
+
+form input {
+  margin: 10px;
+  padding: 7px;
+  width: 40%;
+}
+.info3 textarea{
+  width: 93%;
+  margin-left: 1%;
+}
+/*form, .info1, .info2{
+display: flex;
+flex-direction: column;
+}*/
+
+
+
+
+/*Mobile*/
+@media screen and (max-device-width: 480px) {
+
+  header{
+    z-index: 1;
+  }
+  #logo {
+  margin-left: 4vw;
+   width: 85vw;
+   height: 17vh;
+   position: fixed;
+   position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 12px;
+  margin-top: 1vh;
+  border-radius: 2%;
+  }
+
+  h3 {
   text-align: center;
   font-weight: 900;
   font-size: 25px;
   margin: 15px;
-}
+  }
 
-.navicon {
+  .navicon {
   width: 100%;
   color: black;
   padding-top: 10px;
   background: transparent;
-  margin: 130px auto 40px;
+  margin: 140px auto 40px;
   position: relative;
   height: 30px;
   width: 50px;
@@ -39,8 +79,8 @@ h3 {
   z-index: 99;
   -webkit-transition: linear 0.5s all;
   transition: linear 0.5s all;
-}
-.navicon:before, .navicon:after {
+  }
+  .navicon:before, .navicon:after {
   background: #fff;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -149,6 +189,7 @@ h3 {
   text-align: center;
   font-size: 1.2em;
 }
+
 .social li {
   /*display: flex;*/
   /*flex-direction: row;*/
@@ -158,6 +199,7 @@ h3 {
   padding-left: 3%;
   padding-right: 3%;
 }
+
 .social li a {
   text-align: center;
   color: #000;
@@ -165,128 +207,598 @@ h3 {
   -webkit-transition: linear 0.5s all;
   transition: linear 0.5s all;
 }
+
 .social li a:hover {
   color: #db5523;
   -webkit-transition: linear 0.5s all;
   transition: linear 0.5s all;
  }
 
-/******* bodyStyling for mobile *******/
-body {
- z-index: 1000;
+  body {
+  z-index: 1000;
   background-image: url("../Images/santorini.jpeg");
   background-position: top;
   background-repeat: no-repeat;
   font-family: "grec";
-  height: 100vh;
-}
+  /*height: 100vh;*/
+  }
+
+  #contact-form {
+    margin-left: -8%;
+  margin-top: -115%;
+  align-items: center;
+  }
+
+  .info3 {
+    text-align: center;
+    margin-left: 5%;
+    /*width: 50vw;*/
+  }
+
+  #inputActivity {
+    background-color: white;
+    width: 55%;
+    margin-left: 30%;
+  }
+
+  form input {
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .info3 textarea{
+    width: 93%;
+    margin-left: 3%;
+  }
  form, .info1, .info2{
   display: flex;
   flex-direction: column;
   position: auto;
  }
 
+}
+
+/************  Landscape Mobile  **************/
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    header .toggle {
+      height: 39vh;
+    }
+
+    header .toggle__menu {
+      padding-bottom: 20px;
+    }
+
+    .social li a{
+      font-size: 1em;
+    }
+
+}
+/********** Tablet portrait ************/
+@media only screen
+  and (min-device-width: 1000px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  /*and (-webkit-min-device-pixel-ratio: 2) */
+  {
+    body {
+      background-image: url("../Images/Santorini.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      /*height: 100vh;*/
+    }
+    .logo #logo {
+      width: 25vw;
+    }
+
+    .toggle__menu li a {
+      font-size: 1.7em;
+    }
+
+    .social li a{
+      font-size: 2em;
+      padding: 10px;
+    }
+}
+/********** Tablet Landscape ************/
+@media only screen
+  and (min-device-width: 1000px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  /*and (-webkit-min-device-pixel-ratio: 2) */
+  {
+
+    .logo #logo {
+      position: absolute;
+      width: 50vw;
+    }
+    .toggle__menu {
+      margin-right: 15%;
+    }
+    .toggle__menu li a h3 {
+      font-size: 2em;
+    }
+    .social li i {
+      font-size: 1.5em;
+    }
+    .social li {
+      padding: 10px;
+    }
+    form {
+      margin-top: -100%;
+      background-color: red;
+    }
+    body {
+      background-image: url("../Images/Santorini.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      /*height: 100vh;*/
+    }
+}
 
 
-
+/************** Iphone X Landscape **************/
+@media screen and (min-device-width: 810px)
+and (max-device-width: 1200px)
+and (orientation: landscape){
+  .logo #logo {
+    width: 20vw;
+  }
+  .social {
+    margin-top: -.5%;
+  }
+  .social li a{
+    font-size: .8em;
+  }
+  .toggle__menu {
+    margin-top: -3%;
+  }
+  .toggle__menu li {
+    margin-right: -35%;
+    font-size: .6em;
+  }
+  body {
+    width: 100vw;
+  }
+  form {
+    margin-bottom: -150%;
+  }
 }
 
 
 
-/********** Nav Bar Styling *************/
+/************* Iphone X Styling *****************/
+@media screen and (min-device-width:810px)
+and (max-device-width: 1200px)
+ {
+  .logo #logo {
+    width: 20vw;
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    display: block;
+    width: 100%;
+    margin-left: -40px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .social li a{
+    list-style: none;
+    font-size: .8em;
+  }
+  .toggle__menu {
+    list-style: none;
+    text-decoration: none;
+    margin-top: -3%;
+  }
+  .toggle__menu li {
+    list-style: none;
+    text-decoration: none;
+    margin-right: -35%;
+    font-size: .6em;
+  }
+  .toggle__menu li a {
+    list-style: none;
+    text-decoration: none;
+  }
+  form {
+  margin-top: -108%;
+  }
 
-/*#logo {
- width: 20vw;
- position: fixed;
- position: absolute;
- margin-right: 80vw;
+  form input {
+    margin: 10px;
+    padding: 5px;
+  }
+  .info3 textarea{
+    width: 93%;
+    margin-left: 3%;
+  }
+ form, .info1, .info2{
+  display: flex;
+  flex-direction: column;
+  position: auto;
+ }
 }
 
-.navBar {
- width: 100vw;
- height: 25vh;
- margin-top: -1%;
+
+/************  Tablet  *************/
+@media screen and (min-device-width: 616px) and (max-device-width: 900px) {
+
+  .toggle {
+   font-family: "grec";
+   background-color: #Dbd6d6;
+   display: flex;
+   flex-direction: column;
+   padding-top: 2%;
+   height: 25vh;
+  }
+
+  .toggle ul {
+   display: flex;
+   padding-left: 20vw;
+   justify-content: space-around;
+   list-style: none;
+  }
+
+  .social {
+   display: flex;
+   text-decoration: none;
+   flex-direction: row;
+   width: 35vw;
+   margin-left: 30vw;
+   justify-content: space-around;
+   font-size: 2em;
+  }
+
+  .social li {
+     font-size: 1.2em;
+  }
+
+  .toggle a {
+   text-decoration: none;
+   font-size: 1.4em;
+  }
+
+  #Santorini{
+   width: 100vw;
+   height: 100vh;
+
+  }
+
+  .toggle {
+   width: 100vw;
+   height: 25vh;
+   margin-top: -2.5%;
+  }
+
+  header {
+    top: 0;
+    margin-top: -1%;
+  }
+
+  #logo{
+   width: 40vw;
+   position: absolute;
+   padding: 2%;
+  }
+
+  .social li{
+    font-size: 1.2em;
+    padding: 10px;
+    width: 5%;
+    text-wrap: wrap;
+  }
+
+  .toggle__menu {
+    width: 70vw;
+    padding-right: 5%;
+    margin-left: -5%;
+  }
+
 }
 
-.navBar nav{
- font-family: "grec";
- background-color: #Dbd6d6;
- display: flex;
- flex-direction: column;
- padding-top: 2%;
- height: 19vh;
+/********** Nav Bar Styling for desktop *************/
+@media screen and (min-device-width: 900px) {
+  header {
+  margin: 0;
 }
 
-.navBar nav ul {
+  .social li a {
+  font-size: 1em;
+}
+
+  #logo {
+   width: 30vw;
+   position: fixed;
+   margin-right: 80vw;
+   padding: 2%;
+}
+
+  .toggle {
+   width: 100vw;
+   height: 25vh;
+   margin-top: -2.5%;
+}
+
+  .toggle {
+   font-family: "grec";
+   background-color: #Dbd6d6;
+   display: flex;
+   flex-direction: column;
+   padding-top: 2%;
+   height: 25vh;
+}
+  .info2 {
+    align-items: center;
+    padding: 10px;
+  }
+
+  .toggle ul {
  display: flex;
  padding-left: 20vw;
  justify-content: space-around;
  list-style: none;
 }
 
-.favicons{
+  .social {
  display: flex;
  text-decoration: none;
  flex-direction: row;
  width: 35vw;
  margin-left: 30vw;
  justify-content: space-around;
+ font-size: 2em;
 }
 
-nav a {
+  .social li {
+   font-size: 1.2em;
+}
+
+.toggle a {
  text-decoration: none;
  font-size: 1.4em;
 }
 
-
-/************* Form portion of page***************/
-
-/*body{
- padding: 0;
- margin: 0%;
+  #Santorini {
  width: 100vw;
  height: 100vh;
- background-image: url("../Images/santorini.jpeg");
- background-size: cover;
- background-repeat: no-repeat;
+
+}
+  body {
+ padding: 0;
+ margin: 0;
 }
 
-.info1, .info2, .info3, .info4{
- display: flex;
- flex-direction: row;
- justify-content: flex-end;
-}
-.info3{
- padding-right: 3vw;
+  .toggle__menu li a {
+  font-size: 1em;
 }
 
-
-input, textarea, #inputActivity{
- z-index: 3;
- background-color: #dbd6d6;
- color: black;
- font-weight: bold;
- font-size: 1em;
- padding: 10px;
- text-indent: 5px;
- margin: 15px;
+  form {
+  /*padding-right: 10%;*/
+  padding-left: 52%;
+  padding-top: 3%;
 }
 
-textarea{
-overflow: auto;
-width: 30vw;
-height: 20vh;
-text-align: center;
+  form input {
+  width: 19%;
+  padding: 5px;
+}
+  .info3 {
+    width: 75%;
+    margin-left: 15%;
+  }
+  #send {
+    margin-left: 42%;
+    padding: 10px;
+    border-radius: 5%;
+    width: 15%;
+  }
 }
 
-#send{
-width: 10vw;
-height: 10vh;
-background-color: #dbd6d6;
-border-radius: 50%;
-margin-right: 7vw;
-border-color: black;
-border-width: thick;
-font-size: 2em;
-color: #1957af;
-}*/*/
+
+/************ nav bar Media querry for Mobile  ************/
+  @media screen and (max-device-width: 615px) {
+
+  #logo {
+  margin-left: 4vw;
+   width: 85vw;
+   height: 17vh;
+   position: fixed;
+   position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 12px;
+  margin-top: 1vh;
+  border-radius: 2%;
+  }
+
+  body {
+    background-image: url("../Images/Santorini.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    font-family: "grec";
+    /*height: 100vh;*/
+  }
+
+  .navicon {
+    width: 100%;
+    color: black;
+    padding-top: 10px;
+    background: transparent;
+    margin: 140px auto 40px;
+    position: relative;
+    height: 30px;
+    width: 50px;
+    display: block;
+    z-index: 99;
+    -webkit-transition: linear 0.5s all;
+    transition: linear 0.5s all;
+  }
+  .navicon:before, .navicon:after {
+    background: #fff;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    content: "";
+    height: 3px;
+    left: 0;
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+    width: 45px;
+  }
+  .navicon:before {
+    -webkit-box-shadow: #fff 0 14px 0 0;
+            box-shadow: #fff 0 14px 0 0;
+    position: absolute;
+    top: 0;
+  }
+  .navicon:after {
+    position: absolute;
+    top: 28px;
+  }
+  .navicon--active {
+    margin-top: 135px;
+    -webkit-transition: linear 0.5s all;
+    transition: linear 0.5s all;
+  }
+  .navicon--active:before {
+    -webkit-box-shadow: transparent 0 0 0 0;
+            box-shadow: transparent 0 0 0 0;
+    top: 15px;
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  .navicon--active:after {
+    top: 15px;
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+
+  .toggle {
+    display: block;
+    margin: 20px auto;
+    width: 30%;
+    height: 55vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: block;
+    opacity: 0;
+    -webkit-transition: ease-in 0.5s all;
+    transition: ease-in 0.5s all;
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+    min-width: 320px;
+  }
+  .toggle--active {
+    display: block;
+    opacity: 1;
+    -webkit-transition: ease-in 0.5s all;
+    transition: ease-in 0.5s all;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .toggle__menu {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -18%;
+  }
+  .toggle__menu li {
+    width: 40%;
+    display: block;
+    margin: 10px auto;
+
+  }
+
+  .toggle__menu li a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: linear 0.5s all;
+    transition: linear 0.5s all;
+    font-weight: 500;
+  }
+
+  .toggle__menu li a:hover {
+    color: #db5523;
+    border-bottom: 2px solid #db5523;
+    -webkit-transition: linear 0.5s all;
+    transition: linear 0.5s all;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    font-weight: 700;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    display: block;
+    width: 90%;
+    margin-left: -65px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .social li {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .social li a {
+    text-align: center;
+    color: #000;
+    font-size: 2em;
+    -webkit-transition: linear 0.5s all;
+    transition: linear 0.5s all;
+  }
+  .social li a:hover {
+    color: #db5523;
+    -webkit-transition: linear 0.5s all;
+    transition: linear 0.5s all;
+  }
+}
+
+ #Santorini{
+  z-index: 1;
+ }
+
+/***********  Large Desktop ************/
+@media screen and (min-device-width: 1100px) {
+
+  #logo {
+   width: 25vw;
+   position: fixed;
+   padding: 2%;
+  }
+  .toggle__menu {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-device-width: 1400px) {
+
+  #logo {
+   width: 20vw;
+   position: fixed;
+   padding: 2%;
+  }
+
+  .toggle__menu {
+    font-size: 1.5em;
+  }
+
+  .social li{
+    font-size: 1.6em;
+  }
+}
