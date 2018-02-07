@@ -618,7 +618,7 @@ and (max-device-width: 1200px)
   }
 
   body {
-    background-image: url("../Images/Santorini.jpeg");
+    background-image: url("../Images/santorini.jpeg");
     background-position: top;
     background-repeat: no-repeat;
     font-family: "grec";
