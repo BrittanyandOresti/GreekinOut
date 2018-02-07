@@ -68,6 +68,28 @@
   }
 }
 
+/************** Iphone X Landscape **************/
+@media screen and (min-device-width:810px)
+and (max-device-width: 1200px)
+and (orientation: landscape){
+  .logo #logo {
+    width: 10vw;
+    margin-top: -1.5%;
+  }
+  .favicons a {
+    font-size: .8em;
+    margin-top: -5%;
+  }
+  .toggle__menu {
+    margin-top: -3%;
+    margin-left: 5%;
+  }
+  .toggle__menu li {
+        font-size: .6em;
+  }
+}
+
+
 /*********** Tablet Landscape ************/
 @media screen and (min-device-width:768px)
 and (max-device-width: 1200px)
