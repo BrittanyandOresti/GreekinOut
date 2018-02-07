@@ -789,7 +789,7 @@ and (max-device-width: 1200px)
 and (max-device-width: 2400px) {
  .toggle{
   background-color: red;
-  height: 25vh;
+  height: 35vh;
 
  }
 
