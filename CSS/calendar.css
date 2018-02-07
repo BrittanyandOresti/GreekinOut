@@ -158,7 +158,7 @@ and (orientation: landscape) {
    display: flex;
    flex-direction: column;
    padding-top: 2%;
-   /* height: 19vh; */
+   height: 30vh;
   }
 
   .navBar nav ul {
