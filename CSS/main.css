@@ -59,6 +59,28 @@ body {
     }
 }
 
+/************** Iphone X Landscape **************/
+@media screen and (min-device-width:810px)
+and (max-device-width: 1200px)
+and (orientation: landscape){
+  .logo #logo {
+    width: 20vw;
+  }
+  .social {
+        margin-top: -.5%;
+  }
+  .social li a{
+    font-size: .8em;
+  }
+  .toggle__menu {
+    margin-top: -3%;
+  }
+  .toggle__menu li {
+        margin-right: -35%;
+        font-size: .6em;
+  }
+}
+
 
 /************  Tablet  *************/
 @media screen and (min-device-width: 616px) and (max-device-width: 900px) {
