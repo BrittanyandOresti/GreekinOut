@@ -70,10 +70,11 @@ body{
   padding-right: 5vw;
 }
 
-/************  Landscape Mobile  **************/
+/************  Portrait Mobile  **************/
 @media screen
   and (min-device-width: 375px)
   and (max-device-width: 667px) {
+
     #logo {
       width: 35vw;
     }
@@ -81,7 +82,7 @@ body{
       width: 100vw;
     }
     .favicons {
-      margin-right: -20%;
+      margin-left: 60vw;
     }
     .favicons i {
       font-size: 1em;
@@ -91,5 +92,17 @@ body{
       flex-direction: column;
       width: 90vw;
     }
-
+    .toggle__menu li a {
+      font-size: 1em;
+    }
   }
+
+  /************  Landscape Mobile  **************/
+  @media screen
+    and (min-device-width: 375px)
+    and (max-device-width: 667px) and
+    (orientation: landscape){
+      #logo {
+        width: 20vw;
+      }
+    }
