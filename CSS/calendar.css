@@ -54,7 +54,7 @@
 /************ Tablet Styling ***************/
 @media screen and (min-device-width:768px) {
   .logo #logo {
-    width: 35vw;
+    width: 20vw;
     padding: 10px;
   }
   .favicons {
