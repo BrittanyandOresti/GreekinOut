@@ -1,0 +1,19 @@
+Determining the user's current location
+
+The Geolocation API offers a simple, "one-shot" method to obtain the user's location: getCurrentPosition(). A call to this method asynchronously reports on the user's current location.
+
+
+window.onload = function() {
+  var startPos;
+  var geoSuccess = function(position) {
+    startPos = position;
+    document.getElementById('startLat').innerHTML = startPos.coords.latitude;
+    document.getElementById('startLon').innerHTML = startPos.coords.longitude;
+  };
+  navigator.geolocation.getCurrentPosition(geoSuccess);
+};
+
+
+If this is the first time that an application on this domain has requested permissions, the browser typically checks for user consent. Depending on the browser, there may also be preferences to always allow—or disallow—permission lookups, in which case the confirmation process is bypassed.
+
+Depending on the location device your browser is using, the position object might actually contain a lot more than just latitude and longitude; for example, it might include an altitude or a direction. You can't tell what extra information that location system uses until it actually returns the data.
